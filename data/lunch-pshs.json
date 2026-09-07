@@ -2,7 +2,7 @@
   "school": "pshs",
   "display_name": "Poland Seminary High School",
   "menutype": "lunch",
-  "generated_at": "2026-09-03T14:53:07.928478Z",
+  "generated_at": "2026-09-07T16:17:41.610893Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -173,8 +173,8 @@
       "date": "2026-09-21",
       "items": [
         "Chicken Parmesan Sandwich",
-        "Oven Roasted Carrots",
         "Cucumbers",
+        "Oven Roasted Carrots",
         "Fresh Petite Banana",
         "Cinnamon Applesauce",
         "Popcorn Smackers"
@@ -186,8 +186,8 @@
         "Chicken Fajita & Cheese Dip w/Fresh Bread",
         "Fresh Celery Sticks",
         "Seasoned Refried Beans",
-        "Citrusy Mandarin Oranges",
         "Golden Delicious Apple",
+        "Citrusy Mandarin Oranges",
         "Corn Dog Nuggets"
       ]
     },
@@ -195,8 +195,8 @@
       "date": "2026-09-23",
       "items": [
         "Chicken Meatballs & Penne Pasta w/Fresh Bread",
-        "Fresh Baby Carrots",
         "Seasoned Steamed Green Beans",
+        "Fresh Baby Carrots",
         "Golden Delicious Apple",
         "Applesauce",
         "Chicken Nuggets"
@@ -230,8 +230,8 @@
         "French Toast Sticks w/ 2 Sausage Patties",
         "Crispy Tater Tots",
         "Fresh Baby Carrots",
-        "Red Delicious Apple",
         "Cinnamon Applesauce",
+        "Red Delicious Apple",
         "Corn Dog Nuggets"
       ]
     },
@@ -250,10 +250,10 @@
       "date": "2026-09-30",
       "items": [
         "Bacon Cheeseburger",
-        "Fresh Baby Carrots",
         "BBQ Bacon Baked Beans",
-        "Fresh Petite Banana",
+        "Fresh Baby Carrots",
         "Strawberry Applesauce",
+        "Fresh Petite Banana",
         "Crispy Spicy Chicken Patty Sandwich"
       ]
     }
