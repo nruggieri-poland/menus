@@ -2,7 +2,7 @@
   "school": "pshs",
   "display_name": "Poland Seminary High School",
   "menutype": "lunch",
-  "generated_at": "2026-09-10T14:50:17.349757Z",
+  "generated_at": "2026-09-14T16:47:31.908753Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -230,8 +230,8 @@
         "French Toast Sticks w/ 2 Sausage Patties",
         "Crispy Tater Tots",
         "Fresh Baby Carrots",
-        "Cinnamon Applesauce",
         "Red Delicious Apple",
+        "Cinnamon Applesauce",
         "Corn Dog Nuggets"
       ]
     },
@@ -250,10 +250,10 @@
       "date": "2026-09-30",
       "items": [
         "Bacon Cheeseburger",
-        "BBQ Bacon Baked Beans",
         "Fresh Baby Carrots",
-        "Strawberry Applesauce",
+        "BBQ Bacon Baked Beans",
         "Fresh Petite Banana",
+        "Strawberry Applesauce",
         "Crispy Spicy Chicken Patty Sandwich"
       ]
     }
