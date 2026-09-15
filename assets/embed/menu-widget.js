@@ -53,6 +53,11 @@
 
   function dateKey(d) { return d.getFullYear() + '-' + pad2(d.getMonth() + 1) + '-' + pad2(d.getDate()); }
 
+  function parseDateKey(key) {
+    var parts = key.split('-');
+    return new Date(+parts[0], +parts[1] - 1, +parts[2]);
+  }
+
   function sameDay(a, b) { return dateKey(a) === dateKey(b); }
 
   function addDays(d, n) { var r = new Date(d); r.setDate(r.getDate() + n); return r; }
@@ -139,17 +144,33 @@
     + '.psmenu table.psmenu-cal ul{list-style:none;margin:0;padding:0;font-size:.8rem;}'
     + '.psmenu table.psmenu-cal ul li{margin-bottom:.25rem;color:#333;}'
     + '.psmenu .psmenu-status{padding:2rem 1rem;text-align:center;color:#475569;}'
+    // Mobile calendar: a compact tappable day-number grid + single-day
+    // detail panel below it, instead of stacking the whole month's table
+    // (every day, every item, past and future) into one long list — that
+    // was the old mobile fallback, and it buried the day you actually care
+    // about under weeks of already-passed, now-irrelevant menu text.
+    + '.psmenu-cal-compact{display:none;}'
+    + '.psmenu-minigrid{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-top:.5rem;}'
+    + '.psmenu-mg-head{font-size:.7rem;font-weight:700;color:#1a3e9c;text-align:center;text-transform:uppercase;letter-spacing:.04em;padding-bottom:4px;}'
+    + '.psmenu-mg-cell{-webkit-appearance:none;appearance:none;font-family:inherit;cursor:pointer;position:relative;aspect-ratio:1;min-height:44px;border:1px solid #d8dee9;border-radius:8px;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;font-size:.95rem;font-weight:600;color:#1a1a2e;}'
+    + '.psmenu-mg-cell.has-items{border-color:#a9bde8;}'
+    + '.psmenu-mg-cell.today{border-color:#1a3e9c;border-width:2px;}'
+    + '.psmenu-mg-cell.selected{background:#1a3e9c;border-color:#1a3e9c;color:#fff;}'
+    + '.psmenu-mg-cell.selected .psmenu-mg-dot{background:#fff;}'
+    + '.psmenu-mg-dot{width:5px;height:5px;border-radius:50%;background:#1a3e9c;}'
+    + '.psmenu-mg-empty{visibility:hidden;}'
+    + '.psmenu-daydetail{margin-top:1rem;border:1px solid #d8dee9;border-radius:10px;padding:1rem 1.1rem;background:#f8faff;}'
+    + '.psmenu-daydetail-head h3{font-size:1.05rem;color:#1a3e9c;margin:0 0 .6rem;display:flex;align-items:center;gap:.5rem;}'
+    + '.psmenu-no-menu{color:#475569;font-style:italic;opacity:.7;margin:0;}'
     + '@media (max-width:700px){'
-    + '.psmenu table.psmenu-cal thead{position:absolute;left:-9999px;top:-9999px;}'
-    + '.psmenu table.psmenu-cal,.psmenu table.psmenu-cal tbody,.psmenu table.psmenu-cal tr,.psmenu table.psmenu-cal td{display:block;width:100%;}'
-    + '.psmenu table.psmenu-cal tr{margin-bottom:1rem;border:1px solid #d8dee9;border-radius:8px;overflow:hidden;}'
-    + '.psmenu table.psmenu-cal td{border:none;border-bottom:1px solid #d8dee9;}'
-    + '.psmenu table.psmenu-cal td:last-child{border-bottom:none;}'
-    + '.psmenu table.psmenu-cal td.psmenu-empty{display:none;}'
-    + '.psmenu table.psmenu-cal td::before{content:attr(data-day);font-weight:700;color:#1a3e9c;display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.3rem;}'
-    + '.psmenu .psmenu-daynum{text-align:left;}'
+    + '.psmenu table.psmenu-cal{display:none;}'
+    + '.psmenu-cal-compact{display:block;}'
     + '}'
-    + '@media print{.psmenu .psmenu-nav,.psmenu .psmenu-toggle{display:none !important;}}';
+    + '@media print{'
+    + '.psmenu .psmenu-nav,.psmenu .psmenu-toggle{display:none !important;}'
+    + '.psmenu-cal-compact{display:none !important;}'
+    + '.psmenu table.psmenu-cal{display:table !important;}'
+    + '}';
 
   function injectStyleOnce() {
     if (document.getElementById('psmenu-style')) return;
@@ -220,8 +241,10 @@
   Widget.prototype.renderCalendar = function (moveFocus) {
     var self = this;
     this.getItemMap().then(function (itemMap) {
+      self._itemMap = itemMap || {};
       self.el.innerHTML = self.buildCalendarHTML(itemMap, self.year, self.month);
       self.bindCalendarNav();
+      self.bindCompactDayClicks();
       if (moveFocus) self.focusHeading();
     });
   };
@@ -271,6 +294,24 @@
       ? '<p class="psmenu-status">Sorry, the menu couldn&rsquo;t be loaded right now. Please try again later.</p>'
       : '';
 
+    // Default selected day for the mobile compact grid: today, if today
+    // falls in the month being displayed; otherwise the first weekday of
+    // that month, so navigating to a past/future month always lands on a
+    // sensible day instead of nothing being selected.
+    var todayD = new Date();
+    var isCurrentMonth = todayD.getFullYear() === year && todayD.getMonth() + 1 === month;
+    var defaultSelected = isCurrentMonth ? todayD : null;
+    if (!defaultSelected) {
+      for (var wi = 0; wi < weeks.length && !defaultSelected; wi++) {
+        for (var di = 0; di < weeks[wi].length; di++) {
+          if (weeks[wi][di]) { defaultSelected = weeks[wi][di]; break; }
+        }
+      }
+    }
+    this._selectedKey = defaultSelected ? dateKey(defaultSelected) : null;
+
+    var compactHtml = this.buildCompactCalendarHTML(itemMap, weeks, todayD, defaultSelected);
+
     return ''
       + '<div class="psmenu-head">'
       + '<p class="psmenu-announce" tabindex="-1">' + esc(monthLabel) + '</p>'
@@ -283,7 +324,71 @@
       + noDataNote
       + '<table class="psmenu-cal"><caption>' + esc(cap(this.menutype)) + ' menu &mdash; ' + esc(this.displayName) + ' &mdash; ' + esc(monthLabel) + '</caption>'
       + '<thead><tr>' + headerCells + '</tr></thead><tbody>' + rowsHtml + '</tbody></table>'
+      + compactHtml
       + '<div class="psmenu-toggle"><button type="button" data-nav="list">List View</button></div>';
+  };
+
+  Widget.prototype.buildCompactCalendarHTML = function (itemMap, weeks, todayD, selected) {
+    var self = this;
+    var headCells = DAYS.map(function (d) {
+      return '<div class="psmenu-mg-head" aria-hidden="true">' + d.slice(0, 1) + '</div>';
+    }).join('');
+
+    var cellsHtml = weeks.map(function (week) {
+      return week.map(function (d) {
+        if (!d) return '<div class="psmenu-mg-cell psmenu-mg-empty"></div>';
+        var key = dateKey(d);
+        var hasItems = (itemMap[key] || []).length > 0;
+        var isToday = sameDay(d, todayD);
+        var isSelected = selected && key === dateKey(selected);
+        var cls = 'psmenu-mg-cell'
+          + (isToday ? ' today' : '')
+          + (isSelected ? ' selected' : '')
+          + (hasItems ? ' has-items' : '');
+        return '<button type="button" class="' + cls + '" data-date="' + key + '" aria-pressed="' + (isSelected ? 'true' : 'false') + '" '
+          + 'aria-label="' + esc(fmtDateLong(d)) + (hasItems ? ', menu available' : ', no menu') + '">'
+          + '<span aria-hidden="true">' + d.getDate() + '</span>'
+          + (hasItems ? '<span class="psmenu-mg-dot" aria-hidden="true"></span>' : '')
+          + '</button>';
+      }).join('');
+    }).join('');
+
+    return '<div class="psmenu-cal-compact">'
+      + '<div class="psmenu-minigrid" role="group" aria-label="Choose a day">' + headCells + cellsHtml + '</div>'
+      + '<div class="psmenu-daydetail" aria-live="polite">' + this.buildDayDetailHTML(itemMap, selected) + '</div>'
+      + '</div>';
+  };
+
+  Widget.prototype.buildDayDetailHTML = function (itemMap, d) {
+    if (!d) return '<p class="psmenu-status">Pick a day above to see its menu.</p>';
+    var items = itemMap[dateKey(d)] || [];
+    var isToday = sameDay(d, new Date());
+    var itemsHtml = items.length
+      ? '<ul class="psmenu-items">' + items.map(function (it) { return '<li>' + esc(it) + '</li>'; }).join('') + '</ul>'
+      : '<p class="psmenu-no-menu">No menu available</p>';
+    return '<div class="psmenu-daydetail-head"><h3>' + esc(fmtDateLong(d))
+      + (isToday ? ' <span class="psmenu-flag">Today</span>' : '') + '</h3></div>'
+      + itemsHtml;
+  };
+
+  Widget.prototype.bindCompactDayClicks = function () {
+    var self = this;
+    var grid = this.el.querySelector('.psmenu-minigrid');
+    var detail = this.el.querySelector('.psmenu-daydetail');
+    if (!grid || !detail) return;
+    grid.addEventListener('click', function (e) {
+      var btn = e.target.closest && e.target.closest('[data-date]');
+      if (!btn || btn.getAttribute('data-date') === self._selectedKey) return;
+      self._selectedKey = btn.getAttribute('data-date');
+
+      var cells = grid.querySelectorAll('.psmenu-mg-cell[data-date]');
+      for (var i = 0; i < cells.length; i++) {
+        var isSelected = cells[i].getAttribute('data-date') === self._selectedKey;
+        cells[i].classList.toggle('selected', isSelected);
+        cells[i].setAttribute('aria-pressed', isSelected ? 'true' : 'false');
+      }
+      detail.innerHTML = self.buildDayDetailHTML(self._itemMap, parseDateKey(self._selectedKey));
+    });
   };
 
   Widget.prototype.bindCalendarNav = function () {
