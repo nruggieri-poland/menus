@@ -2,7 +2,7 @@
   "school": "mckinley-middle",
   "display_name": "McKinley/Middle School",
   "menutype": "lunch",
-  "generated_at": "2026-09-14T16:48:01.625999Z",
+  "generated_at": "2026-09-17T15:27:20.249841Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -221,7 +221,7 @@
         "Fresh Baby Carrots",
         "Seasoned Refried Beans",
         "Strawberry Banana Applesauce",
-        "Popcorn Smackers"
+        "Corn Dog Nuggets"
       ]
     },
     {
@@ -231,7 +231,7 @@
         "Baked French Fries",
         "Cucumbers",
         "Fruit Punch Craisins",
-        "Corn Dog Nuggets"
+        "Popcorn Smackers"
       ]
     }
   ]
