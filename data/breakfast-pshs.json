@@ -2,7 +2,7 @@
   "school": "pshs",
   "display_name": "Poland Seminary High School",
   "menutype": "breakfast",
-  "generated_at": "2026-09-17T15:26:30.554222Z",
+  "generated_at": "2026-09-21T16:47:48.419244Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -192,8 +192,8 @@
       "date": "2026-10-01",
       "items": [
         "Confetti Pancakes",
-        "Apple Juice",
-        "Fresh Petite Banana"
+        "Fresh Petite Banana",
+        "Apple Juice"
       ]
     },
     {
@@ -208,16 +208,16 @@
       "date": "2026-10-05",
       "items": [
         "Mini Chocolate Chip French Toast",
-        "Apple Juice",
-        "Golden Delicious Apple"
+        "Golden Delicious Apple",
+        "Apple Juice"
       ]
     },
     {
       "date": "2026-10-06",
       "items": [
         "Confetti Pancakes",
-        "Sunrise Orange Juice",
-        "Fresh Petite Banana"
+        "Fresh Petite Banana",
+        "Sunrise Orange Juice"
       ]
     },
     {
@@ -240,8 +240,8 @@
       "date": "2026-10-13",
       "items": [
         "Strawberry Cream Cheese Mini Bagels",
-        "Apple Juice",
-        "Raspberry Lemonade Craisins"
+        "Raspberry Lemonade Craisins",
+        "Apple Juice"
       ]
     },
     {
@@ -288,32 +288,32 @@
       "date": "2026-10-21",
       "items": [
         "Blueberry Snack'n Waffle",
-        "Fruit Punch Craisins",
-        "Apple Juice"
+        "Apple Juice",
+        "Fruit Punch Craisins"
       ]
     },
     {
       "date": "2026-10-22",
       "items": [
         "Mini Chocolate Chip French Toast",
-        "Sunrise Orange Juice",
-        "Cinnamon Applesauce"
+        "Cinnamon Applesauce",
+        "Sunrise Orange Juice"
       ]
     },
     {
       "date": "2026-10-23",
       "items": [
         "Iced Donut w/Sprinkles",
-        "Apple Juice",
-        "Golden Delicious Apple"
+        "Golden Delicious Apple",
+        "Apple Juice"
       ]
     },
     {
       "date": "2026-10-26",
       "items": [
         "Cinnamon Roll",
-        "Sunrise Orange Juice",
-        "Golden Delicious Apple"
+        "Golden Delicious Apple",
+        "Sunrise Orange Juice"
       ]
     },
     {
@@ -328,8 +328,8 @@
       "date": "2026-10-28",
       "items": [
         "Strawberry Cream Cheese Mini Bagels",
-        "Sunrise Orange Juice",
-        "Raspberry Lemonade Craisins"
+        "Raspberry Lemonade Craisins",
+        "Sunrise Orange Juice"
       ]
     },
     {
@@ -344,8 +344,8 @@
       "date": "2026-10-30",
       "items": [
         "Fresh Petite Banana",
-        "Pear, Banana, & Spinach Smoothie w/ Cereal & Crackers",
-        "Sunrise Orange Juice"
+        "Sunrise Orange Juice",
+        "Pear, Banana, & Spinach Smoothie w/ Cereal & Crackers"
       ]
     }
   ]
