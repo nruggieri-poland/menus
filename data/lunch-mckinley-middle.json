@@ -2,7 +2,7 @@
   "school": "mckinley-middle",
   "display_name": "McKinley/Middle School",
   "menutype": "lunch",
-  "generated_at": "2026-09-24T15:43:39.654080Z",
+  "generated_at": "2026-09-28T18:28:58.494911Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -232,6 +232,206 @@
         "Cucumbers",
         "Fruit Punch Craisins",
         "Popcorn Smackers"
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "items": [
+        "Chicken Meatballs & Penne Pasta w/Fresh Bread",
+        "Fresh Baby Carrots",
+        "Seasoned Steamed Green Beans",
+        "Tropical Pineapple Tidbits",
+        "Chicken Nuggets with Fresh Bread"
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "items": [
+        "Cheese Pizza",
+        "Seasoned Steamed Broccoli",
+        "Fresh Red and Green Peppers",
+        "Citrusy Mandarin Oranges",
+        "Grilled Cheese"
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "items": [
+        "Cheeseburger on a Bun",
+        "Fresh Baby Carrots",
+        "Baked French Fries",
+        "Cinnamon Applesauce",
+        "Chicken Nuggets with Fresh Bread"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "items": [
+        "Cheesy Chicken Nachos",
+        "Fresh Celery Sticks",
+        "Seasoned Refried Beans",
+        "Tropical Pineapple Tidbits",
+        "Corn Dog Nuggets"
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "items": [
+        "French Toast Sticks w/Sausage",
+        "Crispy Tater Tots",
+        "Fresh Baby Carrots",
+        "Raspberry Lemonade Craisins",
+        "Breaded Chicken Sandwich"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "items": [
+        "Bosco Sticks w/Dipping Sauce",
+        "Fresh Baby Carrots",
+        "Seasoned Steamed Green Beans",
+        "Birthday Cake Applesauce",
+        "Cheeseburger on a Bun"
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "items": [
+        "Walking Taco with Beef, Cheese, Nacho Doritos & Fresh Bread",
+        "Creamy Cucumber Salad",
+        "Seasoned Refried Beans",
+        "Tropical Pineapple Tidbits",
+        "Chicken Nuggets with Fresh Bread"
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "items": [
+        "Macaroni & Cheese w/ Garlic Toast",
+        "Fresh Baby Carrots",
+        "Seasoned Steamed Peas",
+        "Fruit Punch Craisins",
+        "Breaded Chicken Sandwich"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "items": [
+        "Dutch Waffle & Chicken",
+        "Fresh Cucumber Slices",
+        "Seasoned Steamed Mixed Vegetables",
+        "Fresh Petite Banana",
+        "Crispy Spicy Chicken Patty Sandwich"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "items": [
+        "Cheese Pizza",
+        "Fresh Baby Carrots",
+        "Seasoned Steamed Broccoli",
+        "Strawberry Applesauce",
+        "Grilled Cheese"
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "items": [
+        "Freshly Baked Italian Dunkers",
+        "Fresh Baby Carrots",
+        "Seasoned Steamed Green Beans",
+        "Citrusy Mandarin Oranges",
+        "Corn Dog Nuggets"
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "items": [
+        "Soft Beef & Cheese Tacos",
+        "Fresh Celery Sticks",
+        "Seasoned Refried Beans",
+        "Fresh Petite Banana",
+        "Chicken Nuggets with Fresh Bread"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "items": [
+        "Crispy Chicken Nuggets w/ Buttered Noodles",
+        "Fresh Cucumber Slices",
+        "Seasoned Steamed Carrots",
+        "Tropical Pineapple Tidbits",
+        "Crispy Spicy Chicken Patty Sandwich"
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "items": [
+        "Popcorn Chicken Bowl w/ Fresh Bread",
+        "Fresh Cucumber Slices",
+        "Seasoned Steamed Golden Corn",
+        "Red Delicious Apple",
+        "Grilled Cheese"
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "items": [
+        "Cheese Pizza",
+        "Fresh Baby Carrots",
+        "Seasoned Steamed Broccoli",
+        "Applesauce",
+        "Corn Dog Nuggets"
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "items": [
+        "Teriyaki Chicken & Vegetables over Fluffy Rice",
+        "Fresh Baby Carrots",
+        "Seasoned Steamed Mixed Vegetables",
+        "Cinnamon Applesauce",
+        "Breaded Chicken Sandwich"
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "items": [
+        "Sloppy Nachos",
+        "Fresh Cucumber Slices",
+        "Seasoned Refried Beans",
+        "Tropical Pineapple Tidbits",
+        "Popcorn Smackers"
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "items": [
+        "Meatball Hoagie",
+        "Fresh Cucumber Slices",
+        "Seasoned Steamed Green Beans",
+        "Golden Delicious Apple",
+        "Corn Dog Nuggets"
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "items": [
+        "Chicken Breast Tender",
+        "Fresh Baby Carrots",
+        "Baked French Fries",
+        "Raspberry Lemonade Craisins",
+        "Hamburger on Bun"
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "items": [
+        "Cheese Pizza",
+        "Seasoned Steamed Broccoli",
+        "Fresh Red and Green Peppers",
+        "Citrusy Mandarin Oranges",
+        "Grilled Cheese"
       ]
     }
   ]

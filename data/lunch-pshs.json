@@ -2,7 +2,7 @@
   "school": "pshs",
   "display_name": "Poland Seminary High School",
   "menutype": "lunch",
-  "generated_at": "2026-09-24T15:43:15.395249Z",
+  "generated_at": "2026-09-28T18:28:25.647274Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -252,6 +252,226 @@
         "Bacon Cheeseburger",
         "Fresh Baby Carrots",
         "BBQ Bacon Baked Beans",
+        "Fresh Petite Banana",
+        "Strawberry Applesauce",
+        "Crispy Spicy Chicken Patty Sandwich"
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "items": [
+        "Crispy Chicken Tender Combo with Crave Sauce and Garlic Toast",
+        "Oven Roasted Carrots",
+        "Cucumbers",
+        "Red Delicious Apple",
+        "Tropical Pineapple Tidbits",
+        "Cheeseburger on a Bun"
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "items": [
+        "White Margherita Pizza",
+        "Seasoned Steamed Broccoli",
+        "Fresh Red and Green Peppers",
+        "Citrusy Mandarin Oranges",
+        "Fresh Petite Banana",
+        "Breaded Chicken Sandwich"
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "items": [
+        "Dutch Waffle & Chicken",
+        "Seasoned Steamed Broccoli",
+        "Cucumbers",
+        "Red Delicious Apple",
+        "Cinnamon Applesauce",
+        "Breaded Chicken Sandwich"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "items": [
+        "Beef & Cheese Nachos",
+        "Fresh Baby Carrots",
+        "Seasoned Refried Beans",
+        "Citrusy Mandarin Oranges",
+        "Fresh Petite Banana",
+        "Cheeseburger on a Bun"
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "items": [
+        "Popcorn Chicken Bowl w/ Fresh Bread",
+        "Oven Roasted Carrots",
+        "Cucumbers",
+        "Red Delicious Apple",
+        "Tropical Pineapple Tidbits",
+        "Chicken Nuggets"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "items": [
+        "Bosco Sticks w/Dipping Sauce",
+        "Seasoned Steamed Mixed Vegetables",
+        "Fresh Red and Green Peppers",
+        "Fresh Petite Banana",
+        "Cinnamon Applesauce",
+        "Crispy Spicy Chicken Patty Sandwich"
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "items": [
+        "Walking Taco",
+        "Creamy Cucumber Salad",
+        "Seasoned Refried Beans",
+        "Citrusy Mandarin Oranges",
+        "Red Delicious Apple",
+        "Corn Dog"
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "items": [
+        "Macaroni & Cheese w/ Garlic Toast",
+        "Fresh Baby Carrots",
+        "Seasoned Steamed Broccoli",
+        "Fresh Petite Banana",
+        "Fruit Punch Craisins",
+        "Chicken Nuggets"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "items": [
+        "Chicken and Vegetable Lo Mein w/ Fresh Sliced Bread",
+        "Seasoned Steamed Mixed Vegetables",
+        "Fresh Baby Carrots and Celery Sticks",
+        "Red Delicious Apple",
+        "Tropical Pineapple Tidbits",
+        "Cheeseburger on a Bun"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "items": [
+        "Jalapeno Popper Pizza",
+        "Fresh Baby Carrots",
+        "Seasoned Steamed Golden Corn",
+        "Citrusy Mandarin Oranges",
+        "Fresh Petite Banana",
+        "Breaded Chicken Sandwich"
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "items": [
+        "French Toast Sticks w/ 2 Sausage Patties",
+        "Crispy Tater Tots",
+        "Cucumbers",
+        "Golden Delicious Apple",
+        "Applesauce",
+        "Pepperoni Pizza"
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "items": [
+        "Cheese Quesadilla w/ Salsa",
+        "Fresh Baby Carrots",
+        "Seasoned Refried Beans",
+        "Red Delicious Apple",
+        "Fresh Petite Banana",
+        "Crispy Spicy Chicken Patty Sandwich"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "items": [
+        "Chicken and Vegetable Dumplings with Ginger Dressing and Fried Rice",
+        "Seasoned Steamed Mixed Vegetables",
+        "Fresh Red and Green Peppers",
+        "Citrusy Mandarin Oranges",
+        "Golden Delicious Apple",
+        "Cheese Pizza"
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "items": [
+        "Meatball Hoagie",
+        "Honey Glazed Carrots",
+        "Black Bean & Corn Salad",
+        "Fresh Petite Banana",
+        "Strawberry Applesauce",
+        "Corn Dog"
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "items": [
+        "Buffalo Chicken Pizza",
+        "Fresh Baby Carrots",
+        "Seasoned Steamed Green Beans",
+        "Golden Delicious Apple",
+        "Tropical Pineapple Tidbits",
+        "Grilled Cheese"
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "items": [
+        "Buffalo Chicken Dipper w/ Garlic Toast",
+        "Fresh Baby Carrots",
+        "Seasoned Steamed Mixed Vegetables",
+        "Red Delicious Apple",
+        "Cinnamon Applesauce",
+        "Cheeseburger on a Bun"
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "items": [
+        "Beef Burrito Bowl",
+        "Seasoned Refried Beans",
+        "Pickled Bell Peppers & Carrots",
+        "Citrusy Mandarin Oranges",
+        "Fresh Petite Banana",
+        "Corn Dog Nuggets"
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "items": [
+        "Sweet and Sour Chicken w/ Rice",
+        "Fresh Baby Carrots",
+        "Seasoned Steamed Golden Corn",
+        "Red Delicious Apple",
+        "Applesauce",
+        "Crispy Spicy Chicken Patty Sandwich"
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "items": [
+        "Bosco Sticks w/Dipping Sauce",
+        "Fresh Cucumber Slices",
+        "Honey Glazed Carrots",
+        "Golden Delicious Apple",
+        "Tropical Pineapple Tidbits",
+        "Breaded Chicken Sandwich"
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "items": [
+        "Chicken BBQ Pizza",
+        "Fresh Red and Green Peppers",
+        "Green Beans",
         "Fresh Petite Banana",
         "Strawberry Applesauce",
         "Crispy Spicy Chicken Patty Sandwich"
