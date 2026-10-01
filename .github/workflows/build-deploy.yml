@@ -96,12 +96,29 @@ jobs:
         # directly. site/ is pure build output (fully regenerated every run)
         # and is deployed straight to Pages below — it's never committed, so
         # it never bloats git history.
+        #
+        # Retries with rebase on a rejected push: the twice-weekly cron and
+        # the 1st-of-month cron fire at the same time whenever the 1st lands
+        # on a Monday or Thursday (roughly 2 out of every 7 months), and a
+        # manual workflow_dispatch run can also overlap a scheduled one —
+        # the concurrency group above should serialize these, but this is
+        # a cheap, harmless belt-and-suspenders fix either way.
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/ widgets/
-          git diff --cached --quiet || git commit -m "chore: update menu data $(date +%Y-%m-%d)"
-          git push
+          if git diff --cached --quiet; then
+            echo "No menu/widget changes to commit."
+            exit 0
+          fi
+          git commit -m "chore: update menu data $(date +%Y-%m-%d)"
+          for i in 1 2 3 4 5; do
+            git push && exit 0
+            echo "Push rejected (attempt $i/5) — another run likely landed a commit first; pulling and retrying..."
+            git pull --rebase origin master
+          done
+          echo "::error::Push failed after 5 retries"
+          exit 1
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
