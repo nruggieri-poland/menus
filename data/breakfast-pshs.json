@@ -2,7 +2,7 @@
   "school": "pshs",
   "display_name": "Poland Seminary High School",
   "menutype": "breakfast",
-  "generated_at": "2026-10-01T19:57:34.909337Z",
+  "generated_at": "2026-10-05T19:31:50.672556Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -288,32 +288,32 @@
       "date": "2026-10-21",
       "items": [
         "Blueberry Snack'n Waffle",
-        "Apple Juice",
-        "Fruit Punch Craisins"
+        "Fruit Punch Craisins",
+        "Apple Juice"
       ]
     },
     {
       "date": "2026-10-22",
       "items": [
         "Mini Chocolate Chip French Toast",
-        "Cinnamon Applesauce",
-        "Sunrise Orange Juice"
+        "Sunrise Orange Juice",
+        "Cinnamon Applesauce"
       ]
     },
     {
       "date": "2026-10-23",
       "items": [
         "Iced Donut w/Sprinkles",
-        "Golden Delicious Apple",
-        "Apple Juice"
+        "Apple Juice",
+        "Golden Delicious Apple"
       ]
     },
     {
       "date": "2026-10-26",
       "items": [
         "Cinnamon Roll",
-        "Golden Delicious Apple",
-        "Sunrise Orange Juice"
+        "Sunrise Orange Juice",
+        "Golden Delicious Apple"
       ]
     },
     {
@@ -328,8 +328,8 @@
       "date": "2026-10-28",
       "items": [
         "Strawberry Cream Cheese Mini Bagels",
-        "Raspberry Lemonade Craisins",
-        "Sunrise Orange Juice"
+        "Sunrise Orange Juice",
+        "Raspberry Lemonade Craisins"
       ]
     },
     {
@@ -344,8 +344,8 @@
       "date": "2026-10-30",
       "items": [
         "Fresh Petite Banana",
-        "Sunrise Orange Juice",
-        "Pear, Banana, & Spinach Smoothie w/ Cereal & Crackers"
+        "Pear, Banana, & Spinach Smoothie w/ Cereal & Crackers",
+        "Sunrise Orange Juice"
       ]
     }
   ]

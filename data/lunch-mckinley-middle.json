@@ -2,7 +2,7 @@
   "school": "mckinley-middle",
   "display_name": "McKinley/Middle School",
   "menutype": "lunch",
-  "generated_at": "2026-10-01T19:58:17.296652Z",
+  "generated_at": "2026-10-05T19:32:30.411446Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -378,8 +378,8 @@
       "date": "2026-10-23",
       "items": [
         "Cheese Pizza",
-        "Fresh Baby Carrots",
         "Seasoned Steamed Broccoli",
+        "Fresh Baby Carrots",
         "Applesauce",
         "Corn Dog Nuggets"
       ]
@@ -388,8 +388,8 @@
       "date": "2026-10-26",
       "items": [
         "Teriyaki Chicken & Vegetables over Fluffy Rice",
-        "Fresh Baby Carrots",
         "Seasoned Steamed Mixed Vegetables",
+        "Fresh Baby Carrots",
         "Cinnamon Applesauce",
         "Breaded Chicken Sandwich"
       ]
@@ -398,8 +398,8 @@
       "date": "2026-10-27",
       "items": [
         "Sloppy Nachos",
-        "Fresh Cucumber Slices",
         "Seasoned Refried Beans",
+        "Fresh Cucumber Slices",
         "Tropical Pineapple Tidbits",
         "Popcorn Smackers"
       ]
@@ -408,8 +408,8 @@
       "date": "2026-10-28",
       "items": [
         "Meatball Hoagie",
-        "Fresh Cucumber Slices",
         "Seasoned Steamed Green Beans",
+        "Fresh Cucumber Slices",
         "Golden Delicious Apple",
         "Corn Dog Nuggets"
       ]

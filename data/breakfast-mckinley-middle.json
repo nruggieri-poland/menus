@@ -2,7 +2,7 @@
   "school": "mckinley-middle",
   "display_name": "McKinley/Middle School",
   "menutype": "breakfast",
-  "generated_at": "2026-10-01T19:58:03.222799Z",
+  "generated_at": "2026-10-05T19:32:17.111892Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -288,24 +288,24 @@
       "date": "2026-10-21",
       "items": [
         "Blueberry Snack'n Waffle",
-        "Apple Juice",
-        "Fruit Punch Craisins"
+        "Fruit Punch Craisins",
+        "Apple Juice"
       ]
     },
     {
       "date": "2026-10-22",
       "items": [
         "Mini Chocolate Chip French Toast",
-        "Cinnamon Applesauce",
-        "Sunrise Orange Juice"
+        "Sunrise Orange Juice",
+        "Cinnamon Applesauce"
       ]
     },
     {
       "date": "2026-10-23",
       "items": [
         "Iced Donut w/Sprinkles",
-        "Golden Delicious Apple",
-        "Apple Juice"
+        "Apple Juice",
+        "Golden Delicious Apple"
       ]
     },
     {
@@ -328,8 +328,8 @@
       "date": "2026-10-28",
       "items": [
         "Strawberry Cream Cheese Mini Bagels",
-        "Fresh Petite Banana",
-        "Apple Juice"
+        "Apple Juice",
+        "Fresh Petite Banana"
       ]
     },
     {
@@ -344,8 +344,8 @@
       "date": "2026-10-30",
       "items": [
         "Golden Delicious Apple",
-        "Sunrise Orange Juice",
-        "Pear, Banana, & Spinach Smoothie w/ Cereal & Crackers"
+        "Pear, Banana, & Spinach Smoothie w/ Cereal & Crackers",
+        "Sunrise Orange Juice"
       ]
     }
   ]

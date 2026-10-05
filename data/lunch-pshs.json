@@ -2,7 +2,7 @@
   "school": "pshs",
   "display_name": "Poland Seminary High School",
   "menutype": "lunch",
-  "generated_at": "2026-10-01T19:57:49.047300Z",
+  "generated_at": "2026-10-05T19:32:04.003400Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -371,10 +371,10 @@
       "date": "2026-10-19",
       "items": [
         "French Toast Sticks w/ 2 Sausage Patties",
-        "Crispy Tater Tots",
         "Cucumbers",
-        "Golden Delicious Apple",
+        "Crispy Tater Tots",
         "Applesauce",
+        "Golden Delicious Apple",
         "Pepperoni Pizza"
       ]
     },
@@ -382,10 +382,10 @@
       "date": "2026-10-20",
       "items": [
         "Cheese Quesadilla w/ Salsa",
-        "Fresh Baby Carrots",
         "Seasoned Refried Beans",
-        "Red Delicious Apple",
+        "Fresh Baby Carrots",
         "Fresh Petite Banana",
+        "Red Delicious Apple",
         "Crispy Spicy Chicken Patty Sandwich"
       ]
     },
@@ -395,8 +395,8 @@
         "Chicken and Vegetable Dumplings with Ginger Dressing and Fried Rice",
         "Seasoned Steamed Mixed Vegetables",
         "Fresh Red and Green Peppers",
-        "Citrusy Mandarin Oranges",
         "Golden Delicious Apple",
+        "Citrusy Mandarin Oranges",
         "Cheese Pizza"
       ]
     },
@@ -404,10 +404,10 @@
       "date": "2026-10-22",
       "items": [
         "Meatball Hoagie",
-        "Honey Glazed Carrots",
         "Black Bean & Corn Salad",
-        "Fresh Petite Banana",
+        "Honey Glazed Carrots",
         "Strawberry Applesauce",
+        "Fresh Petite Banana",
         "Corn Dog"
       ]
     },
@@ -415,10 +415,10 @@
       "date": "2026-10-23",
       "items": [
         "Buffalo Chicken Pizza",
-        "Fresh Baby Carrots",
         "Seasoned Steamed Green Beans",
-        "Golden Delicious Apple",
+        "Fresh Baby Carrots",
         "Tropical Pineapple Tidbits",
+        "Golden Delicious Apple",
         "Grilled Cheese"
       ]
     },
@@ -428,8 +428,8 @@
         "Buffalo Chicken Dipper w/ Garlic Toast",
         "Fresh Baby Carrots",
         "Seasoned Steamed Mixed Vegetables",
-        "Red Delicious Apple",
         "Cinnamon Applesauce",
+        "Red Delicious Apple",
         "Cheeseburger on a Bun"
       ]
     },
@@ -448,10 +448,10 @@
       "date": "2026-10-28",
       "items": [
         "Sweet and Sour Chicken w/ Rice",
-        "Fresh Baby Carrots",
         "Seasoned Steamed Golden Corn",
-        "Red Delicious Apple",
+        "Fresh Baby Carrots",
         "Applesauce",
+        "Red Delicious Apple",
         "Crispy Spicy Chicken Patty Sandwich"
       ]
     },
@@ -459,8 +459,8 @@
       "date": "2026-10-29",
       "items": [
         "Bosco Sticks w/Dipping Sauce",
-        "Fresh Cucumber Slices",
         "Honey Glazed Carrots",
+        "Fresh Cucumber Slices",
         "Golden Delicious Apple",
         "Tropical Pineapple Tidbits",
         "Breaded Chicken Sandwich"
@@ -472,8 +472,8 @@
         "Chicken BBQ Pizza",
         "Fresh Red and Green Peppers",
         "Green Beans",
-        "Fresh Petite Banana",
         "Strawberry Applesauce",
+        "Fresh Petite Banana",
         "Crispy Spicy Chicken Patty Sandwich"
       ]
     }
