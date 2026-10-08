@@ -2,7 +2,7 @@
   "school": "mckinley-middle",
   "display_name": "McKinley/Middle School",
   "menutype": "breakfast",
-  "generated_at": "2026-10-05T19:32:17.111892Z",
+  "generated_at": "2026-10-08T17:43:41.683305Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -288,8 +288,8 @@
       "date": "2026-10-21",
       "items": [
         "Blueberry Snack'n Waffle",
-        "Fruit Punch Craisins",
-        "Apple Juice"
+        "Apple Juice",
+        "Fruit Punch Craisins"
       ]
     },
     {
