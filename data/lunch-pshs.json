@@ -2,7 +2,7 @@
   "school": "pshs",
   "display_name": "Poland Seminary High School",
   "menutype": "lunch",
-  "generated_at": "2026-10-08T17:43:29.502957Z",
+  "generated_at": "2026-10-12T20:07:27.000797Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -404,10 +404,10 @@
       "date": "2026-10-22",
       "items": [
         "Meatball Hoagie",
-        "Black Bean & Corn Salad",
         "Honey Glazed Carrots",
-        "Strawberry Applesauce",
+        "Black Bean & Corn Salad",
         "Fresh Petite Banana",
+        "Strawberry Applesauce",
         "Corn Dog"
       ]
     },
@@ -415,10 +415,10 @@
       "date": "2026-10-23",
       "items": [
         "Buffalo Chicken Pizza",
-        "Seasoned Steamed Green Beans",
         "Fresh Baby Carrots",
-        "Tropical Pineapple Tidbits",
+        "Seasoned Steamed Green Beans",
         "Golden Delicious Apple",
+        "Tropical Pineapple Tidbits",
         "Grilled Cheese"
       ]
     },
@@ -428,8 +428,8 @@
         "Buffalo Chicken Dipper w/ Garlic Toast",
         "Fresh Baby Carrots",
         "Seasoned Steamed Mixed Vegetables",
-        "Cinnamon Applesauce",
         "Red Delicious Apple",
+        "Cinnamon Applesauce",
         "Cheeseburger on a Bun"
       ]
     },
@@ -448,10 +448,10 @@
       "date": "2026-10-28",
       "items": [
         "Sweet and Sour Chicken w/ Rice",
-        "Seasoned Steamed Golden Corn",
         "Fresh Baby Carrots",
-        "Applesauce",
+        "Seasoned Steamed Golden Corn",
         "Red Delicious Apple",
+        "Applesauce",
         "Crispy Spicy Chicken Patty Sandwich"
       ]
     },
@@ -459,8 +459,8 @@
       "date": "2026-10-29",
       "items": [
         "Bosco Sticks w/Dipping Sauce",
-        "Honey Glazed Carrots",
         "Fresh Cucumber Slices",
+        "Honey Glazed Carrots",
         "Golden Delicious Apple",
         "Tropical Pineapple Tidbits",
         "Breaded Chicken Sandwich"
@@ -472,8 +472,8 @@
         "Chicken BBQ Pizza",
         "Fresh Red and Green Peppers",
         "Green Beans",
-        "Strawberry Applesauce",
         "Fresh Petite Banana",
+        "Strawberry Applesauce",
         "Crispy Spicy Chicken Patty Sandwich"
       ]
     }
