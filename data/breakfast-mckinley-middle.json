@@ -2,7 +2,7 @@
   "school": "mckinley-middle",
   "display_name": "McKinley/Middle School",
   "menutype": "breakfast",
-  "generated_at": "2026-10-15T15:30:38.291860Z",
+  "generated_at": "2026-10-19T17:20:43.827342Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -352,16 +352,16 @@
       "date": "2026-11-02",
       "items": [
         "Mini Maple Waffles",
-        "Fresh Petite Banana",
-        "Apple Juice"
+        "Apple Juice",
+        "Fresh Petite Banana"
       ]
     },
     {
       "date": "2026-11-03",
       "items": [
         "Blueberry Snack'n Waffle",
-        "Fresh Petite Banana",
-        "Sunrise Orange Juice"
+        "Sunrise Orange Juice",
+        "Fresh Petite Banana"
       ]
     },
     {
@@ -400,8 +400,8 @@
       "date": "2026-11-10",
       "items": [
         "Goody Ring",
-        "Raspberry Lemonade Craisins",
-        "Apple Juice"
+        "Apple Juice",
+        "Raspberry Lemonade Craisins"
       ]
     },
     {
@@ -424,8 +424,8 @@
       "date": "2026-11-13",
       "items": [
         "Chocolate Banana Breakfast Smoothie with Toast",
-        "Golden Delicious Apple",
-        "Sunrise Orange Juice"
+        "Sunrise Orange Juice",
+        "Golden Delicious Apple"
       ]
     },
     {
@@ -448,32 +448,32 @@
       "date": "2026-11-18",
       "items": [
         "Cinnamon Roll",
-        "Fresh Petite Banana",
-        "Apple Juice"
+        "Apple Juice",
+        "Fresh Petite Banana"
       ]
     },
     {
       "date": "2026-11-19",
       "items": [
         "Goody Ring",
-        "Cinnamon Applesauce",
-        "Apple Juice"
+        "Apple Juice",
+        "Cinnamon Applesauce"
       ]
     },
     {
       "date": "2026-11-20",
       "items": [
         "Iced Donut w/Sprinkles",
-        "Raspberry Lemonade Craisins",
-        "Sunrise Orange Juice"
+        "Sunrise Orange Juice",
+        "Raspberry Lemonade Craisins"
       ]
     },
     {
       "date": "2026-11-23",
       "items": [
         "Egg & Cheese Biscuit",
-        "Golden Delicious Apple",
-        "Sunrise Orange Juice"
+        "Sunrise Orange Juice",
+        "Golden Delicious Apple"
       ]
     },
     {

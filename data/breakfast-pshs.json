@@ -2,7 +2,7 @@
   "school": "pshs",
   "display_name": "Poland Seminary High School",
   "menutype": "breakfast",
-  "generated_at": "2026-10-15T15:30:09.244017Z",
+  "generated_at": "2026-10-19T17:20:15.450965Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -368,8 +368,8 @@
       "date": "2026-11-04",
       "items": [
         "Cinnamon Roll",
-        "Golden Delicious Apple",
-        "Apple Juice"
+        "Apple Juice",
+        "Golden Delicious Apple"
       ]
     },
     {
