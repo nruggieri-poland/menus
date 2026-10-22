@@ -2,7 +2,7 @@
   "school": "pshs",
   "display_name": "Poland Seminary High School",
   "menutype": "breakfast",
-  "generated_at": "2026-10-19T17:20:15.450965Z",
+  "generated_at": "2026-10-22T15:49:09.646226Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -360,16 +360,16 @@
       "date": "2026-11-03",
       "items": [
         "Blueberry Snack'n Waffle",
-        "Sunrise Orange Juice",
-        "Fresh Petite Banana"
+        "Fresh Petite Banana",
+        "Sunrise Orange Juice"
       ]
     },
     {
       "date": "2026-11-04",
       "items": [
         "Cinnamon Roll",
-        "Apple Juice",
-        "Golden Delicious Apple"
+        "Golden Delicious Apple",
+        "Apple Juice"
       ]
     },
     {

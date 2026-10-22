@@ -2,7 +2,7 @@
   "school": "pshs",
   "display_name": "Poland Seminary High School",
   "menutype": "lunch",
-  "generated_at": "2026-10-19T17:20:29.873999Z",
+  "generated_at": "2026-10-22T15:49:25.937741Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -481,8 +481,8 @@
       "date": "2026-11-02",
       "items": [
         "Chicken Parmesan Sandwich",
-        "Cucumbers",
         "Oven Roasted Carrots",
+        "Cucumbers",
         "Fresh Petite Banana",
         "Cinnamon Applesauce",
         "Popcorn Smackers"
@@ -494,8 +494,8 @@
         "Chicken Fajita & Cheese Dip w/Fresh Bread",
         "Fresh Celery Sticks",
         "Seasoned Refried Beans",
-        "Golden Delicious Apple",
         "Citrusy Mandarin Oranges",
+        "Golden Delicious Apple",
         "Corn Dog Nuggets"
       ]
     },
@@ -503,8 +503,8 @@
       "date": "2026-11-04",
       "items": [
         "Chicken Meatballs & Penne Pasta w/Fresh Bread",
-        "Seasoned Steamed Green Beans",
         "Fresh Baby Carrots",
+        "Seasoned Steamed Green Beans",
         "Golden Delicious Apple",
         "Applesauce",
         "Chicken Nuggets"

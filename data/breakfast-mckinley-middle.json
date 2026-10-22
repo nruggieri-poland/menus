@@ -2,7 +2,7 @@
   "school": "mckinley-middle",
   "display_name": "McKinley/Middle School",
   "menutype": "breakfast",
-  "generated_at": "2026-10-19T17:20:43.827342Z",
+  "generated_at": "2026-10-22T15:49:41.328027Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -352,16 +352,16 @@
       "date": "2026-11-02",
       "items": [
         "Mini Maple Waffles",
-        "Apple Juice",
-        "Fresh Petite Banana"
+        "Fresh Petite Banana",
+        "Apple Juice"
       ]
     },
     {
       "date": "2026-11-03",
       "items": [
         "Blueberry Snack'n Waffle",
-        "Sunrise Orange Juice",
-        "Fresh Petite Banana"
+        "Fresh Petite Banana",
+        "Sunrise Orange Juice"
       ]
     },
     {
