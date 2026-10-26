@@ -2,7 +2,7 @@
   "school": "mckinley-middle",
   "display_name": "McKinley/Middle School",
   "menutype": "lunch",
-  "generated_at": "2026-10-22T15:49:57.744539Z",
+  "generated_at": "2026-10-26T17:10:16.497312Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -468,8 +468,8 @@
       "date": "2026-11-05",
       "items": [
         "Bacon Cheeseburger",
-        "Baked French Fries",
         "Fresh Baby Carrots",
+        "Baked French Fries",
         "Blue Raspberry Applesauce",
         "Breaded Chicken Sandwich"
       ]

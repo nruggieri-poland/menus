@@ -2,7 +2,7 @@
   "school": "pshs",
   "display_name": "Poland Seminary High School",
   "menutype": "breakfast",
-  "generated_at": "2026-10-22T15:49:09.646226Z",
+  "generated_at": "2026-10-26T17:09:25.234643Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -384,8 +384,8 @@
       "date": "2026-11-06",
       "items": [
         "Iced Donut w/Sprinkles",
-        "Apple Juice",
-        "Fresh Petite Banana"
+        "Fresh Petite Banana",
+        "Apple Juice"
       ]
     },
     {
