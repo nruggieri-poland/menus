@@ -2,7 +2,7 @@
   "school": "mckinley-middle",
   "display_name": "McKinley/Middle School",
   "menutype": "breakfast",
-  "generated_at": "2026-10-26T17:09:59.011283Z",
+  "generated_at": "2026-10-29T17:18:57.255768Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -400,8 +400,8 @@
       "date": "2026-11-10",
       "items": [
         "Goody Ring",
-        "Apple Juice",
-        "Raspberry Lemonade Craisins"
+        "Raspberry Lemonade Craisins",
+        "Apple Juice"
       ]
     },
     {

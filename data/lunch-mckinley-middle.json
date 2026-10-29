@@ -2,7 +2,7 @@
   "school": "mckinley-middle",
   "display_name": "McKinley/Middle School",
   "menutype": "lunch",
-  "generated_at": "2026-10-26T17:10:16.497312Z",
+  "generated_at": "2026-10-29T17:19:09.886549Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -498,8 +498,8 @@
       "date": "2026-11-10",
       "items": [
         "Popcorn Smackers",
-        "Creamy Mashed Potatoes w/ Gravy",
         "Fresh Baby Carrots",
+        "Creamy Mashed Potatoes w/ Gravy",
         "Strawberry Banana Applesauce",
         "Corn Dog Nuggets"
       ]
