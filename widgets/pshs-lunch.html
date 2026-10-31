@@ -77,12 +77,24 @@
     rollupCache[key] = fetch(REPO_DATA_BASE + filename)
       .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
       .then(function (data) {
+        // date -> [{title, items}] — Nutrislice's station groups
+        // ("Homestyle", "Fan Favorite"). Days saved before sections were
+        // captured fall back to one untitled group.
         var itemMap = {};
-        (data.days || []).forEach(function (d) { itemMap[d.date] = d.items; });
+        (data.days || []).forEach(function (d) {
+          itemMap[d.date] = (d.sections && d.sections.length) ? d.sections : [{ title: null, items: d.items || [] }];
+        });
         return itemMap;
       })
       .catch(function () { return null; });
     return rollupCache[key];
+  }
+
+  function sectionsHtml(sections, listClass) {
+    return sections.map(function (s) {
+      return (s.title ? '<p class="psmenu-pshs-lunch-section">' + esc(s.title) + '</p>' : '')
+        + '<ul class="' + listClass + '">' + s.items.map(function (it) { return '<li>' + esc(it) + '</li>'; }).join('') + '</ul>';
+    }).join('');
   }
 
   // ── Stylesheet (injected once, scoped under .psmenu-pshs-lunch) ─────────────────────
@@ -112,6 +124,9 @@
     + '.psmenu-pshs-lunch ul.psmenu-pshs-lunch-items{list-style:none;margin:0;padding:0;}'
     + '.psmenu-pshs-lunch ul.psmenu-pshs-lunch-items li{padding-left:1.1rem;position:relative;margin-bottom:.4rem;color:#333;}'
     + '.psmenu-pshs-lunch ul.psmenu-pshs-lunch-items li:first-child::before{content:"";position:absolute;left:0;top:.55em;width:8px;height:8px;border-radius:50%;background:#1a3e9c;}'
+    + '.psmenu-pshs-lunch .psmenu-pshs-lunch-section{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#1a3e9c;margin:.9rem 0 .35rem;}'
+    + '.psmenu-pshs-lunch .psmenu-pshs-lunch-section:first-child,.psmenu-pshs-lunch .psmenu-pshs-lunch-daydetail-head+.psmenu-pshs-lunch-section,.psmenu-pshs-lunch .psmenu-pshs-lunch-daynum+.psmenu-pshs-lunch-section{margin-top:0;}'
+    + '.psmenu-pshs-lunch table.psmenu-pshs-lunch-cal .psmenu-pshs-lunch-section{font-size:.62rem;margin:.45rem 0 .2rem;}'
     + '.psmenu-pshs-lunch .psmenu-pshs-lunch-toggle{display:flex;justify-content:center;margin-top:1.25rem;}'
     + '.psmenu-pshs-lunch .psmenu-pshs-lunch-toggle button{background:#1a3e9c;color:#fff;border:0;padding:.65rem 1.5rem;border-radius:8px;font-weight:600;cursor:pointer;min-height:44px;}'
     + '.psmenu-pshs-lunch .psmenu-pshs-lunch-toggle button:hover{background:#0d2870;}'
@@ -258,10 +273,7 @@
         var dayName = DAYS[i];
         if (!d) return '<td class="psmenu-pshs-lunch-empty" data-day="' + esc(dayName) + '"></td>';
         var key = dateKey(d);
-        var items = itemMap[key] || [];
-        var itemsHtml = items.length
-          ? '<ul class="psmenu-pshs-lunch-cal-items">' + items.map(function (it) { return '<li>' + esc(it) + '</li>'; }).join('') + '</ul>'
-          : '';
+        var itemsHtml = sectionsHtml(itemMap[key] || [], 'psmenu-pshs-lunch-cal-items');
         return '<td data-day="' + esc(dayName) + '">'
           + '<span class="psmenu-pshs-lunch-sr-only">' + esc(fmtDateLong(d)) + ': </span>'
           + '<span class="psmenu-pshs-lunch-daynum" aria-hidden="true">' + d.getDate() + '</span>'
@@ -342,10 +354,10 @@
 
   Widget.prototype.buildDayDetailHTML = function (itemMap, d) {
     if (!d) return '<p class="psmenu-pshs-lunch-status">Pick a day above to see its menu.</p>';
-    var items = itemMap[dateKey(d)] || [];
+    var sections = itemMap[dateKey(d)] || [];
     var isToday = sameDay(d, new Date());
-    var itemsHtml = items.length
-      ? '<ul class="psmenu-pshs-lunch-items">' + items.map(function (it) { return '<li>' + esc(it) + '</li>'; }).join('') + '</ul>'
+    var itemsHtml = sections.length
+      ? sectionsHtml(sections, 'psmenu-pshs-lunch-items')
       : '<p class="psmenu-pshs-lunch-no-menu">No menu available</p>';
     return '<div class="psmenu-pshs-lunch-daydetail-head"><h3>' + esc(fmtDateLong(d))
       + (isToday ? ' <span class="psmenu-pshs-lunch-flag">Today</span>' : '') + '</h3></div>'
@@ -411,12 +423,9 @@
     var rows = DAYS.map(function (dayName, i) {
       var d = addDays(monday, i);
       var key = dateKey(d);
-      var items = itemMap[key] || [];
       var isToday = sameDay(d, today);
       var flag = isToday ? '<span class="psmenu-pshs-lunch-flag">Today</span>' : '';
-      var itemsHtml = items.length
-        ? '<ul class="psmenu-pshs-lunch-items">' + items.map(function (it) { return '<li>' + esc(it) + '</li>'; }).join('') + '</ul>'
-        : '';
+      var itemsHtml = sectionsHtml(itemMap[key] || [], 'psmenu-pshs-lunch-items');
       return '<div class="psmenu-pshs-lunch-day' + (isToday ? ' today' : '') + '">'
         + '<div class="psmenu-pshs-lunch-day-head"><h3>' + esc(dayName) + flag + '</h3>'
         + '<span class="psmenu-pshs-lunch-date">' + esc(fmtDateFull(d)) + '</span></div>'

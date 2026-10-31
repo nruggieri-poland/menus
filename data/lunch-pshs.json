@@ -2,7 +2,7 @@
   "school": "pshs",
   "display_name": "Poland Seminary High School",
   "menutype": "lunch",
-  "generated_at": "2026-10-29T17:18:44.865275Z",
+  "generated_at": "2026-10-31T13:44:19.820161Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -57,6 +57,24 @@
         "Fresh Petite Banana",
         "Cinnamon Applesauce",
         "Crispy Spicy Chicken Patty Sandwich"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Bosco Sticks w/Dipping Sauce",
+            "Seasoned Steamed Mixed Vegetables",
+            "Fresh Red and Green Peppers",
+            "Fresh Petite Banana",
+            "Cinnamon Applesauce"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Crispy Spicy Chicken Patty Sandwich"
+          ]
+        }
       ]
     },
     {
@@ -68,6 +86,24 @@
         "Citrusy Mandarin Oranges",
         "Red Delicious Apple",
         "Corn Dog"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Walking Taco",
+            "Creamy Cucumber Salad",
+            "Seasoned Refried Beans",
+            "Citrusy Mandarin Oranges",
+            "Red Delicious Apple"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Corn Dog"
+          ]
+        }
       ]
     },
     {
@@ -79,6 +115,24 @@
         "Red Delicious Apple",
         "Fresh Petite Banana",
         "Crispy Spicy Chicken Patty Sandwich"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Cheese Quesadilla w/ Salsa",
+            "Fresh Baby Carrots",
+            "Seasoned Refried Beans",
+            "Red Delicious Apple",
+            "Fresh Petite Banana"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Crispy Spicy Chicken Patty Sandwich"
+          ]
+        }
       ]
     },
     {
@@ -90,6 +144,24 @@
         "Citrusy Mandarin Oranges",
         "Golden Delicious Apple",
         "Cheese Pizza"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Chicken and Vegetable Dumplings with Ginger Dressing and Fried Rice",
+            "Seasoned Steamed Mixed Vegetables",
+            "Fresh Red and Green Peppers",
+            "Citrusy Mandarin Oranges",
+            "Golden Delicious Apple"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Cheese Pizza"
+          ]
+        }
       ]
     },
     {
@@ -101,6 +173,24 @@
         "Fresh Petite Banana",
         "Strawberry Applesauce",
         "Corn Dog"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Boneless Wings w/ Garlic Toast",
+            "Honey Glazed Carrots",
+            "Black Bean & Corn Salad",
+            "Fresh Petite Banana",
+            "Strawberry Applesauce"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Corn Dog"
+          ]
+        }
       ]
     },
     {
@@ -112,6 +202,24 @@
         "Golden Delicious Apple",
         "Tropical Pineapple Tidbits",
         "Grilled Cheese"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Buffalo Chicken Pizza",
+            "Fresh Baby Carrots",
+            "Seasoned Steamed Green Beans",
+            "Golden Delicious Apple",
+            "Tropical Pineapple Tidbits"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Grilled Cheese"
+          ]
+        }
       ]
     },
     {
@@ -123,6 +231,24 @@
         "Red Delicious Apple",
         "Cinnamon Applesauce",
         "Cheeseburger on a Bun"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Buffalo Chicken Dipper w/ Garlic Toast",
+            "Fresh Baby Carrots",
+            "Seasoned Steamed Mixed Vegetables",
+            "Red Delicious Apple",
+            "Cinnamon Applesauce"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Cheeseburger on a Bun"
+          ]
+        }
       ]
     },
     {
@@ -134,6 +260,24 @@
         "Citrusy Mandarin Oranges",
         "Fresh Petite Banana",
         "Corn Dog Nuggets"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Beef Burrito Bowl",
+            "Seasoned Refried Beans",
+            "Pickled Bell Peppers & Carrots",
+            "Citrusy Mandarin Oranges",
+            "Fresh Petite Banana"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Corn Dog Nuggets"
+          ]
+        }
       ]
     },
     {
@@ -145,6 +289,24 @@
         "Red Delicious Apple",
         "Applesauce",
         "Crispy Spicy Chicken Patty Sandwich"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Chicken w/ Gravy and Biscuit Potato Bowl",
+            "Fresh Baby Carrots",
+            "Seasoned Steamed Golden Corn",
+            "Red Delicious Apple",
+            "Applesauce"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Crispy Spicy Chicken Patty Sandwich"
+          ]
+        }
       ]
     },
     {
@@ -156,6 +318,24 @@
         "Golden Delicious Apple",
         "Tropical Pineapple Tidbits",
         "Breaded Chicken Sandwich"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Bosco Sticks w/Dipping Sauce",
+            "Fresh Cucumber Slices",
+            "Honey Glazed Carrots",
+            "Golden Delicious Apple",
+            "Tropical Pineapple Tidbits"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Breaded Chicken Sandwich"
+          ]
+        }
       ]
     },
     {
@@ -167,6 +347,24 @@
         "Fresh Petite Banana",
         "Strawberry Applesauce",
         "Crispy Spicy Chicken Patty Sandwich"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Chicken BBQ Pizza",
+            "Fresh Red and Green Peppers",
+            "Green Beans",
+            "Fresh Petite Banana",
+            "Strawberry Applesauce"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Crispy Spicy Chicken Patty Sandwich"
+          ]
+        }
       ]
     },
     {
@@ -178,6 +376,24 @@
         "Fresh Petite Banana",
         "Cinnamon Applesauce",
         "Popcorn Smackers"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Chicken Parmesan Sandwich",
+            "Oven Roasted Carrots",
+            "Cucumbers",
+            "Fresh Petite Banana",
+            "Cinnamon Applesauce"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Popcorn Smackers"
+          ]
+        }
       ]
     },
     {
@@ -189,6 +405,24 @@
         "Citrusy Mandarin Oranges",
         "Golden Delicious Apple",
         "Corn Dog Nuggets"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Chicken Fajita & Cheese Dip w/Fresh Bread",
+            "Fresh Celery Sticks",
+            "Seasoned Refried Beans",
+            "Citrusy Mandarin Oranges",
+            "Golden Delicious Apple"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Corn Dog Nuggets"
+          ]
+        }
       ]
     },
     {
@@ -200,6 +434,24 @@
         "Golden Delicious Apple",
         "Applesauce",
         "Chicken Nuggets"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Chicken Meatballs & Penne Pasta w/Fresh Bread",
+            "Fresh Baby Carrots",
+            "Seasoned Steamed Green Beans",
+            "Golden Delicious Apple",
+            "Applesauce"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Chicken Nuggets"
+          ]
+        }
       ]
     },
     {
@@ -211,6 +463,24 @@
         "Fresh Petite Banana",
         "Tropical Pineapple Tidbits",
         "Corn Dog"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Teriyaki Chicken & Vegetables over Fluffy Rice",
+            "Broccoli Salad",
+            "Seasoned Steamed Mixed Vegetables",
+            "Fresh Petite Banana",
+            "Tropical Pineapple Tidbits"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Corn Dog"
+          ]
+        }
       ]
     },
     {
@@ -222,6 +492,24 @@
         "Fresh Petite Banana",
         "Raspberry Lemonade Craisins",
         "Grilled Cheese"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Sausage Pizza",
+            "Seasoned Steamed Golden Corn",
+            "Fresh Red and Green Peppers",
+            "Fresh Petite Banana",
+            "Raspberry Lemonade Craisins"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Grilled Cheese"
+          ]
+        }
       ]
     },
     {
@@ -233,6 +521,24 @@
         "Red Delicious Apple",
         "Cinnamon Applesauce",
         "Corn Dog Nuggets"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "French Toast Sticks w/ 2 Sausage Patties",
+            "Crispy Tater Tots",
+            "Fresh Baby Carrots",
+            "Red Delicious Apple",
+            "Cinnamon Applesauce"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Corn Dog Nuggets"
+          ]
+        }
       ]
     },
     {
@@ -244,6 +550,24 @@
         "Citrusy Mandarin Oranges",
         "Golden Delicious Apple",
         "Grilled Cheese"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Sweet & Spicy BBQ Chicken Bowl",
+            "Seasoned Steamed Golden Corn",
+            "Roasted Chickpeas",
+            "Citrusy Mandarin Oranges",
+            "Golden Delicious Apple"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Grilled Cheese"
+          ]
+        }
       ]
     },
     {
@@ -255,6 +579,24 @@
         "Fresh Petite Banana",
         "Strawberry Applesauce",
         "Crispy Spicy Chicken Patty Sandwich"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Bacon Cheeseburger",
+            "Fresh Baby Carrots",
+            "BBQ Bacon Baked Beans",
+            "Fresh Petite Banana",
+            "Strawberry Applesauce"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Crispy Spicy Chicken Patty Sandwich"
+          ]
+        }
       ]
     },
     {
@@ -266,6 +608,24 @@
         "Red Delicious Apple",
         "Tropical Pineapple Tidbits",
         "Cheeseburger on a Bun"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Crispy Chicken Tender Combo with Crave Sauce and Garlic Toast",
+            "Oven Roasted Carrots",
+            "Cucumbers",
+            "Red Delicious Apple",
+            "Tropical Pineapple Tidbits"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Cheeseburger on a Bun"
+          ]
+        }
       ]
     },
     {
@@ -277,6 +637,24 @@
         "Citrusy Mandarin Oranges",
         "Fresh Petite Banana",
         "Breaded Chicken Sandwich"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "White Margherita Pizza",
+            "Seasoned Steamed Broccoli",
+            "Fresh Red and Green Peppers",
+            "Citrusy Mandarin Oranges",
+            "Fresh Petite Banana"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Breaded Chicken Sandwich"
+          ]
+        }
       ]
     },
     {
@@ -288,6 +666,24 @@
         "Red Delicious Apple",
         "Cinnamon Applesauce",
         "Breaded Chicken Sandwich"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Dutch Waffle & Chicken",
+            "Seasoned Steamed Broccoli",
+            "Cucumbers",
+            "Red Delicious Apple",
+            "Cinnamon Applesauce"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Breaded Chicken Sandwich"
+          ]
+        }
       ]
     },
     {
@@ -299,6 +695,24 @@
         "Citrusy Mandarin Oranges",
         "Fresh Petite Banana",
         "Cheeseburger on a Bun"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Beef & Cheese Nachos",
+            "Fresh Baby Carrots",
+            "Seasoned Refried Beans",
+            "Citrusy Mandarin Oranges",
+            "Fresh Petite Banana"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Cheeseburger on a Bun"
+          ]
+        }
       ]
     },
     {
@@ -310,6 +724,24 @@
         "Red Delicious Apple",
         "Tropical Pineapple Tidbits",
         "Chicken Nuggets"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Popcorn Chicken Bowl w/ Fresh Bread",
+            "Oven Roasted Carrots",
+            "Cucumbers",
+            "Red Delicious Apple",
+            "Tropical Pineapple Tidbits"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Chicken Nuggets"
+          ]
+        }
       ]
     },
     {
@@ -321,6 +753,24 @@
         "Fresh Petite Banana",
         "Cinnamon Applesauce",
         "Crispy Spicy Chicken Patty Sandwich"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Bosco Sticks w/Dipping Sauce",
+            "Seasoned Steamed Mixed Vegetables",
+            "Fresh Red and Green Peppers",
+            "Fresh Petite Banana",
+            "Cinnamon Applesauce"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Crispy Spicy Chicken Patty Sandwich"
+          ]
+        }
       ]
     },
     {
@@ -332,6 +782,24 @@
         "Citrusy Mandarin Oranges",
         "Red Delicious Apple",
         "Corn Dog"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Walking Taco",
+            "Creamy Cucumber Salad",
+            "Seasoned Refried Beans",
+            "Citrusy Mandarin Oranges",
+            "Red Delicious Apple"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Corn Dog"
+          ]
+        }
       ]
     },
     {
@@ -343,6 +811,24 @@
         "Fresh Petite Banana",
         "Fruit Punch Craisins",
         "Chicken Nuggets"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Macaroni & Cheese w/ Garlic Toast",
+            "Fresh Baby Carrots",
+            "Seasoned Steamed Broccoli",
+            "Fresh Petite Banana",
+            "Fruit Punch Craisins"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Chicken Nuggets"
+          ]
+        }
       ]
     },
     {
@@ -354,6 +840,24 @@
         "Red Delicious Apple",
         "Tropical Pineapple Tidbits",
         "Cheeseburger on a Bun"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Chicken and Vegetable Lo Mein w/ Fresh Sliced Bread",
+            "Seasoned Steamed Mixed Vegetables",
+            "Fresh Baby Carrots and Celery Sticks",
+            "Red Delicious Apple",
+            "Tropical Pineapple Tidbits"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Cheeseburger on a Bun"
+          ]
+        }
       ]
     },
     {
@@ -365,6 +869,24 @@
         "Citrusy Mandarin Oranges",
         "Fresh Petite Banana",
         "Breaded Chicken Sandwich"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Jalapeno Popper Pizza",
+            "Fresh Baby Carrots",
+            "Seasoned Steamed Golden Corn",
+            "Citrusy Mandarin Oranges",
+            "Fresh Petite Banana"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Breaded Chicken Sandwich"
+          ]
+        }
       ]
     },
     {
@@ -376,6 +898,24 @@
         "Golden Delicious Apple",
         "Applesauce",
         "Pepperoni Pizza"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "French Toast Sticks w/ 2 Sausage Patties",
+            "Crispy Tater Tots",
+            "Cucumbers",
+            "Golden Delicious Apple",
+            "Applesauce"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Pepperoni Pizza"
+          ]
+        }
       ]
     },
     {
@@ -387,6 +927,24 @@
         "Red Delicious Apple",
         "Fresh Petite Banana",
         "Crispy Spicy Chicken Patty Sandwich"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Cheese Quesadilla w/ Salsa",
+            "Fresh Baby Carrots",
+            "Seasoned Refried Beans",
+            "Red Delicious Apple",
+            "Fresh Petite Banana"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Crispy Spicy Chicken Patty Sandwich"
+          ]
+        }
       ]
     },
     {
@@ -398,6 +956,24 @@
         "Citrusy Mandarin Oranges",
         "Golden Delicious Apple",
         "Cheese Pizza"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Chicken and Vegetable Dumplings with Ginger Dressing and Fried Rice",
+            "Seasoned Steamed Mixed Vegetables",
+            "Fresh Red and Green Peppers",
+            "Citrusy Mandarin Oranges",
+            "Golden Delicious Apple"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Cheese Pizza"
+          ]
+        }
       ]
     },
     {
@@ -409,6 +985,24 @@
         "Fresh Petite Banana",
         "Strawberry Applesauce",
         "Corn Dog"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Meatball Hoagie",
+            "Honey Glazed Carrots",
+            "Black Bean & Corn Salad",
+            "Fresh Petite Banana",
+            "Strawberry Applesauce"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Corn Dog"
+          ]
+        }
       ]
     },
     {
@@ -420,6 +1014,24 @@
         "Golden Delicious Apple",
         "Tropical Pineapple Tidbits",
         "Grilled Cheese"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Buffalo Chicken Pizza",
+            "Fresh Baby Carrots",
+            "Seasoned Steamed Green Beans",
+            "Golden Delicious Apple",
+            "Tropical Pineapple Tidbits"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Grilled Cheese"
+          ]
+        }
       ]
     },
     {
@@ -431,6 +1043,24 @@
         "Red Delicious Apple",
         "Cinnamon Applesauce",
         "Cheeseburger on a Bun"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Buffalo Chicken Dipper w/ Garlic Toast",
+            "Fresh Baby Carrots",
+            "Seasoned Steamed Mixed Vegetables",
+            "Red Delicious Apple",
+            "Cinnamon Applesauce"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Cheeseburger on a Bun"
+          ]
+        }
       ]
     },
     {
@@ -442,6 +1072,24 @@
         "Citrusy Mandarin Oranges",
         "Fresh Petite Banana",
         "Corn Dog Nuggets"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Beef Burrito Bowl",
+            "Seasoned Refried Beans",
+            "Pickled Bell Peppers & Carrots",
+            "Citrusy Mandarin Oranges",
+            "Fresh Petite Banana"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Corn Dog Nuggets"
+          ]
+        }
       ]
     },
     {
@@ -453,6 +1101,24 @@
         "Red Delicious Apple",
         "Applesauce",
         "Crispy Spicy Chicken Patty Sandwich"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Sweet and Sour Chicken w/ Rice",
+            "Fresh Baby Carrots",
+            "Seasoned Steamed Golden Corn",
+            "Red Delicious Apple",
+            "Applesauce"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Crispy Spicy Chicken Patty Sandwich"
+          ]
+        }
       ]
     },
     {
@@ -464,6 +1130,24 @@
         "Golden Delicious Apple",
         "Tropical Pineapple Tidbits",
         "Breaded Chicken Sandwich"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Bosco Sticks w/Dipping Sauce",
+            "Fresh Cucumber Slices",
+            "Honey Glazed Carrots",
+            "Golden Delicious Apple",
+            "Tropical Pineapple Tidbits"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Breaded Chicken Sandwich"
+          ]
+        }
       ]
     },
     {
@@ -475,17 +1159,53 @@
         "Fresh Petite Banana",
         "Strawberry Applesauce",
         "Crispy Spicy Chicken Patty Sandwich"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Chicken BBQ Pizza",
+            "Fresh Red and Green Peppers",
+            "Green Beans",
+            "Fresh Petite Banana",
+            "Strawberry Applesauce"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Crispy Spicy Chicken Patty Sandwich"
+          ]
+        }
       ]
     },
     {
       "date": "2026-11-02",
       "items": [
         "Chicken Parmesan Sandwich",
-        "Oven Roasted Carrots",
         "Cucumbers",
+        "Oven Roasted Carrots",
         "Fresh Petite Banana",
         "Cinnamon Applesauce",
         "Popcorn Smackers"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Chicken Parmesan Sandwich",
+            "Cucumbers",
+            "Oven Roasted Carrots",
+            "Fresh Petite Banana",
+            "Cinnamon Applesauce"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Popcorn Smackers"
+          ]
+        }
       ]
     },
     {
@@ -494,20 +1214,56 @@
         "Chicken Fajita & Cheese Dip w/Fresh Bread",
         "Fresh Celery Sticks",
         "Seasoned Refried Beans",
-        "Citrusy Mandarin Oranges",
         "Golden Delicious Apple",
+        "Citrusy Mandarin Oranges",
         "Corn Dog Nuggets"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Chicken Fajita & Cheese Dip w/Fresh Bread",
+            "Fresh Celery Sticks",
+            "Seasoned Refried Beans",
+            "Golden Delicious Apple",
+            "Citrusy Mandarin Oranges"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Corn Dog Nuggets"
+          ]
+        }
       ]
     },
     {
       "date": "2026-11-04",
       "items": [
         "Chicken Meatballs & Penne Pasta w/Fresh Bread",
-        "Fresh Baby Carrots",
         "Seasoned Steamed Green Beans",
+        "Fresh Baby Carrots",
         "Golden Delicious Apple",
         "Applesauce",
         "Chicken Nuggets"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Chicken Meatballs & Penne Pasta w/Fresh Bread",
+            "Seasoned Steamed Green Beans",
+            "Fresh Baby Carrots",
+            "Golden Delicious Apple",
+            "Applesauce"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Chicken Nuggets"
+          ]
+        }
       ]
     },
     {
@@ -519,6 +1275,24 @@
         "Fresh Petite Banana",
         "Tropical Pineapple Tidbits",
         "Corn Dog"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Teriyaki Chicken & Vegetables over Fluffy Rice",
+            "Broccoli Salad",
+            "Seasoned Steamed Mixed Vegetables",
+            "Fresh Petite Banana",
+            "Tropical Pineapple Tidbits"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Corn Dog"
+          ]
+        }
       ]
     },
     {
@@ -530,6 +1304,24 @@
         "Fresh Petite Banana",
         "Raspberry Lemonade Craisins",
         "Grilled Cheese"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Sausage Pizza",
+            "Seasoned Steamed Golden Corn",
+            "Fresh Red and Green Peppers",
+            "Fresh Petite Banana",
+            "Raspberry Lemonade Craisins"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Grilled Cheese"
+          ]
+        }
       ]
     },
     {
@@ -538,9 +1330,27 @@
         "French Toast Sticks w/ 2 Sausage Patties",
         "Crispy Tater Tots",
         "Fresh Baby Carrots",
-        "Red Delicious Apple",
         "Cinnamon Applesauce",
+        "Red Delicious Apple",
         "Corn Dog Nuggets"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "French Toast Sticks w/ 2 Sausage Patties",
+            "Crispy Tater Tots",
+            "Fresh Baby Carrots",
+            "Cinnamon Applesauce",
+            "Red Delicious Apple"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Corn Dog Nuggets"
+          ]
+        }
       ]
     },
     {
@@ -552,17 +1362,53 @@
         "Citrusy Mandarin Oranges",
         "Golden Delicious Apple",
         "Grilled Cheese"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Sweet & Spicy BBQ Chicken Bowl",
+            "Seasoned Steamed Golden Corn",
+            "Roasted Chickpeas",
+            "Citrusy Mandarin Oranges",
+            "Golden Delicious Apple"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Grilled Cheese"
+          ]
+        }
       ]
     },
     {
       "date": "2026-11-11",
       "items": [
         "Bacon Cheeseburger",
-        "Fresh Baby Carrots",
         "BBQ Bacon Baked Beans",
-        "Fresh Petite Banana",
+        "Fresh Baby Carrots",
         "Strawberry Applesauce",
+        "Fresh Petite Banana",
         "Crispy Spicy Chicken Patty Sandwich"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Bacon Cheeseburger",
+            "BBQ Bacon Baked Beans",
+            "Fresh Baby Carrots",
+            "Strawberry Applesauce",
+            "Fresh Petite Banana"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Crispy Spicy Chicken Patty Sandwich"
+          ]
+        }
       ]
     },
     {
@@ -574,6 +1420,24 @@
         "Red Delicious Apple",
         "Tropical Pineapple Tidbits",
         "Cheeseburger on a Bun"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Crispy Chicken Tender Combo with Crave Sauce and Garlic Toast",
+            "Cucumbers",
+            "Oven Roasted Carrots",
+            "Red Delicious Apple",
+            "Tropical Pineapple Tidbits"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Cheeseburger on a Bun"
+          ]
+        }
       ]
     },
     {
@@ -585,6 +1449,24 @@
         "Citrusy Mandarin Oranges",
         "Fresh Petite Banana",
         "Breaded Chicken Sandwich"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "White Margherita Pizza",
+            "Seasoned Steamed Broccoli",
+            "Fresh Red and Green Peppers",
+            "Citrusy Mandarin Oranges",
+            "Fresh Petite Banana"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Breaded Chicken Sandwich"
+          ]
+        }
       ]
     },
     {
@@ -596,6 +1478,24 @@
         "Cinnamon Applesauce",
         "Red Delicious Apple",
         "Breaded Chicken Sandwich"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Dutch Waffle & Chicken",
+            "Cucumbers",
+            "Seasoned Steamed Broccoli",
+            "Cinnamon Applesauce",
+            "Red Delicious Apple"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Breaded Chicken Sandwich"
+          ]
+        }
       ]
     },
     {
@@ -607,6 +1507,24 @@
         "Citrusy Mandarin Oranges",
         "Fresh Petite Banana",
         "Cheeseburger on a Bun"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Beef & Cheese Nachos",
+            "Seasoned Refried Beans",
+            "Fresh Baby Carrots",
+            "Citrusy Mandarin Oranges",
+            "Fresh Petite Banana"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Cheeseburger on a Bun"
+          ]
+        }
       ]
     },
     {
@@ -618,6 +1536,24 @@
         "Red Delicious Apple",
         "Tropical Pineapple Tidbits",
         "Chicken Nuggets"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Popcorn Chicken Bowl w/ Fresh Bread",
+            "Oven Roasted Carrots",
+            "Cucumbers",
+            "Red Delicious Apple",
+            "Tropical Pineapple Tidbits"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Chicken Nuggets"
+          ]
+        }
       ]
     },
     {
@@ -629,6 +1565,24 @@
         "Applesauce",
         "Golden Delicious Apple",
         "Crispy Spicy Chicken Patty Sandwich"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Roasted Turkey & Gravy w/ Fresh Bread",
+            "Creamy Mashed Potatoes",
+            "Honey Glazed Carrots",
+            "Applesauce",
+            "Golden Delicious Apple"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Crispy Spicy Chicken Patty Sandwich"
+          ]
+        }
       ]
     },
     {
@@ -640,6 +1594,24 @@
         "Fresh Petite Banana",
         "Strawberry Applesauce",
         "Corn Dog"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Honey Hot Chicken Pizza",
+            "Fresh Baby Carrots",
+            "Seasoned Steamed Golden Corn",
+            "Fresh Petite Banana",
+            "Strawberry Applesauce"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Corn Dog"
+          ]
+        }
       ]
     },
     {
@@ -651,6 +1623,24 @@
         "Cinnamon Applesauce",
         "Fresh Petite Banana",
         "Crispy Spicy Chicken Patty Sandwich"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Bosco Sticks w/Dipping Sauce",
+            "Fresh Red and Green Peppers",
+            "Seasoned Steamed Mixed Vegetables",
+            "Cinnamon Applesauce",
+            "Fresh Petite Banana"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Crispy Spicy Chicken Patty Sandwich"
+          ]
+        }
       ]
     },
     {
@@ -662,6 +1652,24 @@
         "Red Delicious Apple",
         "Citrusy Mandarin Oranges",
         "Corn Dog"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "Walking Taco",
+            "Creamy Cucumber Salad",
+            "Seasoned Refried Beans",
+            "Red Delicious Apple",
+            "Citrusy Mandarin Oranges"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Corn Dog"
+          ]
+        }
       ]
     },
     {
@@ -673,6 +1681,24 @@
         "Golden Delicious Apple",
         "Applesauce",
         "Pepperoni Pizza"
+      ],
+      "sections": [
+        {
+          "title": "Homestyle",
+          "items": [
+            "French Toast Sticks w/ 2 Sausage Patties",
+            "Cucumbers",
+            "Crispy Tater Tots",
+            "Golden Delicious Apple",
+            "Applesauce"
+          ]
+        },
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Pepperoni Pizza"
+          ]
+        }
       ]
     }
   ]

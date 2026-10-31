@@ -20,11 +20,12 @@
     --off-white: #d6e4ff;
     --gray:      #7a9cc6;
     --red:       #e84141;
+    --gold:      #ffd166;
 
     --col: 5;
-    --gap: 14px;
+    --gap: 16px;
     --radius: 22px;
-    --header-h: 150px;
+    --header-h: 128px;
   }
 
   html, body {
@@ -41,25 +42,6 @@
     position: fixed; inset: 0;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
     pointer-events: none; z-index: 0; opacity: 0.6;
-  }
-
-  /* ── Floating food emojis (background) ───────────────────────────── */
-  #floaters {
-    position: fixed; inset: 0; pointer-events: none; z-index: 1;
-    overflow: hidden;
-  }
-  .floater {
-    position: absolute;
-    font-size: 2.4rem;
-    opacity: 0;
-    animation: float linear infinite;
-    user-select: none;
-  }
-  @keyframes float {
-    0%   { transform: translateY(100vh) rotate(0deg);   opacity: 0; }
-    8%   { opacity: 0.38; }
-    92%  { opacity: 0.38; }
-    100% { transform: translateY(-120px) rotate(360deg); opacity: 0; }
   }
 
   /* ── Main layout wrapper ──────────────────────────────────────────── */
@@ -108,20 +90,15 @@
   #meal-type-row { display: flex; align-items: center; gap: 20px; }
 
   #meal-icon {
-    font-size: 84px;
+    font-size: 72px;
     line-height: 1;
     filter: drop-shadow(0 4px 12px rgba(0,0,0,0.35));
-    animation: iconBob 3s ease-in-out infinite;
-  }
-  @keyframes iconBob {
-    0%, 100% { transform: rotate(-4deg) translateY(0); }
-    50%      { transform: rotate(4deg) translateY(-4px); }
   }
 
   #meal-type {
     font-family: 'Baloo 2', sans-serif;
     font-weight: 800;
-    font-size: 88px;
+    font-size: 76px;
     line-height: 1;
     letter-spacing: 1px;
     color: var(--white);
@@ -129,7 +106,7 @@
   }
 
   #school-name {
-    font-size: 34px;
+    font-size: 30px;
     font-weight: 500;
     color: var(--accent);
     letter-spacing: 1px;
@@ -154,7 +131,7 @@
   #week-dates {
     font-family: 'Baloo 2', sans-serif;
     font-weight: 700;
-    font-size: 76px;
+    font-size: 64px;
     line-height: 1;
     letter-spacing: 1px;
     color: var(--white);
@@ -168,7 +145,7 @@
   #clock {
     font-family: 'Baloo 2', sans-serif;
     font-weight: 700;
-    font-size: 72px;
+    font-size: 64px;
     line-height: 1;
     letter-spacing: 1px;
     color: var(--accent);
@@ -190,15 +167,24 @@
   }
 
   /* ── Single day card ──────────────────────────────────────────────── */
+  /* Read from across a cafeteria, so each card has exactly one hero: the
+     main entrée, big and bold. Sides sit underneath in smaller, softer
+     type, and every station after the first ("Fan Favorite") gets its own
+     gold callout pinned to the card bottom, so it's always in the same
+     spot and you can compare both choices across the week at a glance.
+
+     Every size is multiplied by --s, one scale shared by all five cards
+     (set by fitCards() in JS), so the week reads as one consistent grid
+     instead of each day picking its own font size. */
   .day-card {
-    background: linear-gradient(160deg, #0f2f82 0%, #091e5a 100%);
+    background: linear-gradient(170deg, #10307f 0%, #0a2161 100%);
     border-radius: var(--radius);
-    border: 1px solid rgba(255,255,255,0.09);
-    box-shadow: 0 4px 24px rgba(0,0,0,0.35);
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.3);
     display: flex; flex-direction: column;
     overflow: hidden;
+    min-height: 0;
     animation: cardIn 0.6s cubic-bezier(.16,1,.3,1) both;
-    transition: transform 0.2s;
   }
   .day-card:nth-child(1) { animation-delay: 0.05s; }
   .day-card:nth-child(2) { animation-delay: 0.12s; }
@@ -211,163 +197,137 @@
     to   { opacity: 1; transform: none; }
   }
 
+  /* Days already served this week fade back so today and what's coming
+     carry the visual weight. */
+  /* (on the children: the card's own cardIn animation pins its opacity) */
+  .day-card.past > * { opacity: 0.4; }
+
   .day-card.today {
-    border-color: var(--accent);
-    box-shadow: 0 0 0 2px var(--accent), 0 8px 32px rgba(124,208,255,0.25);
+    border: 3px solid var(--accent);
+    box-shadow: 0 10px 40px rgba(124,208,255,0.28);
   }
 
-  /* Day header bar */
   .day-header {
-    padding: 16px 20px 14px;
+    padding: 16px 24px;
     background: rgba(255,255,255,0.06);
-    border-bottom: 1px solid rgba(255,255,255,0.07);
-    display: flex; align-items: baseline; justify-content: space-between;
+    display: flex; align-items: center; justify-content: space-between;
     flex-shrink: 0;
   }
+  .day-card.today .day-header { background: var(--accent); }
 
   .day-name {
     font-family: 'Baloo 2', sans-serif;
     font-weight: 700;
-    font-size: 34px;
+    font-size: 38px;
     line-height: 1;
-    letter-spacing: 0;
     color: var(--white);
   }
-
-  .day-card.today .day-name { color: var(--accent); }
+  .day-card.today .day-name { color: var(--navy); }
 
   .day-date {
-    font-size: 38px; font-weight: 600;
+    font-size: 28px; font-weight: 600;
     color: var(--gray);
   }
 
   .today-badge {
     display: none;
-    align-items: center; gap: 5px;
-    font-size: 24px; font-weight: 700;
-    letter-spacing: 1px;
-    color: var(--navy);
-    background: var(--accent);
-    padding: 4px 14px;
-    border-radius: 20px;
+    font-size: 22px; font-weight: 700;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    animation: badgeWiggle 1.6s ease-in-out infinite;
+    color: var(--accent);
+    background: var(--navy);
+    padding: 6px 16px;
+    border-radius: 999px;
   }
-  .day-card.today .today-badge { display: flex; }
+  .day-card.today .today-badge { display: block; }
   .day-card.today .day-date    { display: none; }
 
-  @keyframes badgeWiggle {
-    0%, 100% { transform: rotate(-3deg) scale(1); }
-    50%      { transform: rotate(3deg) scale(1.06); }
+  .day-body {
+    flex: 1; min-height: 0;
+    display: flex; flex-direction: column;
+    gap: calc(20px * var(--s, 1));
+    padding: calc(22px * var(--s, 1)) 24px 22px;
+    overflow: hidden;
   }
 
-  /* Items list ── sizing (--item-fs / --item-gap / --item-dot-fs) is set
-     per-card by fitDayItems() in JS: it starts each card at the largest,
-     most kid-friendly size and shrinks only as far as that card's own item
-     count/length actually requires, so a 3-item breakfast day renders much
-     bigger than a 7-item lunch day instead of both using one compromise
-     size. The px values below are just the pre-JS fallback. */
-  .day-items {
-    position: relative;
-    padding: 14px 18px;
-    display: flex; flex-direction: column; gap: var(--item-gap, 22px);
-    flex: 1; overflow: hidden;
+  .station-label {
+    font-size: calc(19px * var(--s, 1));
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
   }
 
-  /* Subtle bottom fade so a full 6-item day reads as "intentionally full",
-     not like text just stops. Matches the day-card's own gradient near its
-     lower edge, where this sits. */
-  .day-items::after {
-    content: '';
-    position: absolute; left: 0; right: 0; bottom: 0;
-    height: 34px;
-    background: linear-gradient(to bottom, rgba(9,30,90,0), rgba(9,30,90,0.85));
-    pointer-events: none;
-  }
-
-  .menu-item {
-    display: flex; align-items: center; gap: 12px;
-    animation: itemIn 0.4s ease both;
-  }
-  @keyframes itemIn {
-    from { opacity: 0; transform: translateX(-8px); }
-    to   { opacity: 1; transform: none; }
-  }
-
-  .item-dot {
-    font-size: var(--item-dot-fs, 24px);
-    line-height: 1;
-    flex-shrink: 0;
-    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.3));
-  }
-
-  .item-text {
-    font-size: var(--item-fs, 32px);
-    font-weight: 500;
-    line-height: 1.25;
+  .entree {
+    display: flex; align-items: flex-start; gap: 10px;
+    margin-top: calc(6px * var(--s, 1));
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 700;
+    font-size: calc(44px * var(--s, 1));
+    line-height: 1.12;
     color: var(--white);
-    min-width: 0;
-    overflow-wrap: break-word;
+  }
+  .entree-text { text-wrap: balance; min-width: 0; }
+  .entree-with {
+    display: block;
+    margin-top: calc(4px * var(--s, 1));
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.6em;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--off-white);
+  }
+  .entree-emoji { font-size: 0.82em; line-height: 1.35; flex-shrink: 0; }
+
+  .sides {
+    list-style: none;
+    display: flex; flex-direction: column;
+    gap: calc(10px * var(--s, 1));
+    margin-top: calc(16px * var(--s, 1));
+    padding-top: calc(16px * var(--s, 1));
+    border-top: 1px solid rgba(255,255,255,0.14);
+  }
+  .sides li {
+    font-size: calc(28px * var(--s, 1));
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--off-white);
+    text-wrap: pretty;
   }
 
-  .day-card.today .item-text { color: var(--white); }
+  .callout {
+    margin-top: auto;
+    padding: calc(16px * var(--s, 1)) 20px;
+    border-radius: 16px;
+    background: rgba(255,209,102,0.10);
+    border: 1px solid rgba(255,209,102,0.45);
+  }
+  .callout .station-label { color: var(--gold); }
+  .callout .station-label::before { content: '★ '; }
+  .callout .entree { font-size: calc(36px * var(--s, 1)); }
+  .callout .sides { border-top-color: rgba(255,209,102,0.25); }
+  .callout .sides li { font-size: calc(24px * var(--s, 1)); }
 
   .no-menu {
-    font-size: 40px;
+    margin: auto;
+    font-size: 34px;
+    font-weight: 500;
     color: var(--gray);
-    font-style: italic;
-    opacity: 0.6;
-    margin-top: 8px;
+    text-align: center;
   }
 
-  /* Shown only in the pathological case where a card still can't fit its
-     items at the smallest allowed size — a visible, intentional "+N more"
-     instead of a silently clipped last item. */
-  .more-badge {
-    font-size: 22px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    color: var(--accent);
-    opacity: 0.85;
-  }
-
-  /* ── Ticker bar ───────────────────────────────────────────────────── */
-  #ticker-wrap {
-    height: 38px;
-    background: rgba(255,255,255,0.05);
-    border-radius: 8px;
-    border: 1px solid rgba(255,255,255,0.07);
-    overflow: hidden;
-    display: flex; align-items: center;
+  /* ── Footer: the standing meal rules + legal line, static so nothing
+     on the main screen moves while kids are trying to read it ─────── */
+  #footer {
     flex-shrink: 0;
-  }
-
-  #ticker-label {
-    background: var(--accent);
-    color: var(--navy);
-    font-weight: 700;
-    font-size: 16px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    padding: 0 16px;
-    height: 100%;
-    display: flex; align-items: center;
-    flex-shrink: 0;
-  }
-
-  #ticker-track {
-    flex: 1; overflow: hidden; position: relative;
-  }
-
-  #ticker-inner {
-    display: inline-flex; gap: 60px;
-    white-space: nowrap;
-    font-size: 18px;
+    display: flex; align-items: center; justify-content: space-between; gap: 40px;
+    padding: 0 8px;
+    font-size: 21px;
     color: var(--off-white);
-    opacity: 0.8;
-    padding-left: 30px;
-    will-change: transform;
+    white-space: nowrap;
   }
+  #footer strong { color: var(--accent); font-weight: 700; }
+  #footer .foot-note { opacity: 0.65; text-align: right; }
 
   /* ── Error state ──────────────────────────────────────────────────── */
   #error-msg {
@@ -548,9 +508,6 @@
 <!-- One-time kid-friendly welcome burst, plays as the intro overlay exits -->
 <div id="welcome-burst"></div>
 
-<!-- Floating food emojis -->
-<div id="floaters"></div>
-
 <!-- Main app -->
 <div id="app">
   <div id="header">
@@ -575,11 +532,9 @@
 
   <div id="grid"></div>
 
-  <div id="ticker-wrap">
-    <div id="ticker-label">📋 Menu Note</div>
-    <div id="ticker-track">
-      <div id="ticker-inner"></div>
-    </div>
+  <div id="footer">
+    <div><strong>Make it a meal:</strong> choose 3 to 5 items, including at least 1 fruit or veggie</div>
+    <div class="foot-note">Menus subject to change · USDA is an equal opportunity provider, employer, and lender.</div>
   </div>
 </div>
 
@@ -591,15 +546,14 @@ const FOOD_EMOJIS = ['🍕','🥞','🍎','🥐','🧀','🥛','🍊','🥨','�
 
 const DAYS = ['Monday','Tuesday','Wednesday','Thursday','Friday'];
 
-// Matched in order against each item's text; first hit wins. Anything that
-// doesn't match falls back to rotating through FOOD_EMOJIS, so every item
-// still gets a relevant-looking bullet even as new menu items show up that
-// this list has never seen.
+// Matched in order against an entrée's text; first hit wins. Only the
+// entrée gets an emoji, and only when one actually matches — a random
+// fallback on every line just added noise to the cards.
 const ITEM_EMOJI_RULES = [
   [/pizza/i, '🍕'], [/pancake/i, '🥞'], [/waffle/i, '🧇'],
   [/french toast/i, '🍞'], [/chicken (nugget|tender|patt|strip)/i, '🍗'],
   [/(ham)?burger/i, '🍔'], [/hot ?dog|corn dog/i, '🌭'],
-  [/taco|burrito|quesadilla/i, '🌮'], [/pasta|spaghetti|mac\s?(and|&|n)?\s?cheese/i, '🍝'],
+  [/taco|burrito|quesadilla|fajita|nacho/i, '🌮'], [/pasta|spaghetti|mac\s?(and|&|n)?\s?cheese/i, '🍝'],
   [/sandwich|\bsub\b|panini|wrap/i, '🥪'], [/salad/i, '🥗'], [/soup|chili/i, '🍲'],
   [/rice/i, '🍚'], [/bread|roll|biscuit|breadstick/i, '🥖'], [/bagel/i, '🥯'],
   [/muffin|donut|doughnut/i, '🍩'], [/cereal/i, '🥣'], [/yogurt|yoghurt/i, '🍦'],
@@ -611,20 +565,12 @@ const ITEM_EMOJI_RULES = [
   [/cookie/i, '🍪'], [/ice cream/i, '🍨'],
 ];
 
-function emojiForItem(text, fallbackIdx) {
+function emojiForItem(text) {
   for (const [re, emoji] of ITEM_EMOJI_RULES) {
     if (re.test(text)) return emoji;
   }
-  return FOOD_EMOJIS[fallbackIdx % FOOD_EMOJIS.length];
+  return '';
 }
-
-const TICKER_MSGS = [
-  "Menus subject to change without notice",
-  "Students must choose at least 3 to 5 meal components",
-  "Choice of meat or meat alternate  •  Choice of vegetable  •  Choice of fruit  •  Choice of grain/bread  •  Choice of milk",
-  "USDA is an equal opportunity provider, employer, and lender",
-  "Poland Local School District  •  Food Service Department",
-];
 
 // ── Helpers ───────────────────────────────────────────────────────────────
 
@@ -661,22 +607,6 @@ function dateKey(d) {
   return `${y}-${m}-${day}`;
 }
 
-// ── Floaters ──────────────────────────────────────────────────────────────
-
-function spawnFloaters() {
-  const wrap = qs('#floaters');
-  for (let i = 0; i < 26; i++) {
-    const el = document.createElement('div');
-    el.className = 'floater';
-    el.textContent = FOOD_EMOJIS[Math.floor(Math.random() * FOOD_EMOJIS.length)];
-    el.style.left = Math.random() * 100 + 'vw';
-    el.style.animationDuration = (18 + Math.random() * 22) + 's';
-    el.style.animationDelay   = -(Math.random() * 30) + 's';
-    el.style.fontSize = (2.2 + Math.random() * 2.6) + 'rem';
-    wrap.appendChild(el);
-  }
-}
-
 // ── Clock ─────────────────────────────────────────────────────────────────
 
 function startClock() {
@@ -691,42 +621,6 @@ function startClock() {
   setInterval(tick, 1000);
 }
 
-// ── Ticker ────────────────────────────────────────────────────────────────
-//
-// Driven by requestAnimationFrame against elapsed real time (not a fixed
-// CSS @keyframes loop) — position is always recomputed fresh from how much
-// time has actually passed, so it can't drift or freeze the way a CSS
-// animation can on weaker TV hardware after running for hours. Even if
-// frames get dropped while the tab is backgrounded, the very next frame
-// jumps straight to the correct position instead of staying stuck.
-
-let tickerRAF = null;
-
-function buildTicker(items) {
-  const msgs = [...TICKER_MSGS, ...items.slice(0,8).map(i => `Today's menu includes: ${i}`)];
-  const single = msgs.join('   •   ');
-  const track = qs('#ticker-inner');
-  track.textContent = single + '   •   ' + single; // doubled for a seamless loop
-
-  const PIXELS_PER_SEC = 55;
-  const startTime = performance.now();
-  let singleWidth = track.scrollWidth / 2;
-
-  const onResize = () => { singleWidth = track.scrollWidth / 2; };
-  window.addEventListener('resize', onResize);
-
-  if (tickerRAF) cancelAnimationFrame(tickerRAF);
-  function frame(now) {
-    if (singleWidth > 0) {
-      const elapsed = (now - startTime) / 1000;
-      const offset = (elapsed * PIXELS_PER_SEC) % singleWidth;
-      track.style.transform = `translateX(${-offset}px)`;
-    }
-    tickerRAF = requestAnimationFrame(frame);
-  }
-  tickerRAF = requestAnimationFrame(frame);
-}
-
 // ── Data loading ──────────────────────────────────────────────────────────
 
 async function loadData(school, type) {
@@ -737,15 +631,51 @@ async function loadData(school, type) {
   return resp.json();
 }
 
+// date -> [{title, items}] — Nutrislice's station groups ("Homestyle",
+// "Fan Favorite"). Days saved before sections were captured fall back to
+// one untitled group.
 function buildItemMap(data) {
   const map = {};
   for (const day of data.days || []) {
-    map[day.date] = day.items;
+    map[day.date] = (day.sections && day.sections.length)
+      ? day.sections
+      : [{ title: null, items: day.items || [] }];
   }
   return map;
 }
 
 // ── Render ────────────────────────────────────────────────────────────────
+
+function el(tag, className, text) {
+  const node = document.createElement(tag);
+  if (className) node.className = className;
+  if (text != null) node.textContent = text;
+  return node;
+}
+
+// One station: optional label, the first item as the hero entrée (it's
+// always the entrée in Nutrislice's ordering), the rest as a sides list.
+function renderStation(section) {
+  const frag = document.createDocumentFragment();
+  if (section.title) frag.appendChild(el('div', 'station-label', section.title));
+  const [entree, ...sides] = section.items;
+  const entreeEl = el('div', 'entree');
+  const emoji = emojiForItem(entree);
+  if (emoji) entreeEl.appendChild(el('span', 'entree-emoji', emoji));
+  // "Popcorn Chicken Bowl w/ Fresh Bread": the "with …" part drops to a
+  // smaller second line so the dish name itself stays short and big.
+  const m = entree.match(/^(.+?)\s+(?:w\/|with)\s*(.+)$/i);
+  const textEl = el('span', 'entree-text', m ? m[1] : entree);
+  if (m) textEl.appendChild(el('span', 'entree-with', 'with ' + m[2]));
+  entreeEl.appendChild(textEl);
+  frag.appendChild(entreeEl);
+  if (sides.length) {
+    const ul = el('ul', 'sides');
+    sides.forEach(s => ul.appendChild(el('li', null, s)));
+    frag.appendChild(ul);
+  }
+  return frag;
+}
 
 function renderWeek(itemMap, monday, schoolDisplay, type) {
   const todayKey = dateKey(new Date());
@@ -762,119 +692,63 @@ function renderWeek(itemMap, monday, schoolDisplay, type) {
   const grid = qs('#grid');
   grid.innerHTML = '';
 
-  let allItems = [];
-
   DAYS.forEach((dayName, i) => {
     const d = new Date(monday);
     d.setDate(d.getDate() + i);
     const key = dateKey(d);
-    const items = itemMap[key] || [];
-    allItems = allItems.concat(items);
+    const sections = (itemMap[key] || []).filter(s => s.items.length);
 
-    const isToday = key === todayKey;
+    const card = el('div', 'day-card' + (key === todayKey ? ' today' : key < todayKey ? ' past' : ''));
 
-    const card = document.createElement('div');
-    card.className = 'day-card' + (isToday ? ' today' : '');
-
-    const header = document.createElement('div');
-    header.className = 'day-header';
-    header.innerHTML = `
-      <span class="day-name">${dayName}</span>
-      <span class="day-date">${fmtDate(d)}</span>
-      <span class="today-badge">⭐ Today</span>
-    `;
+    const header = el('div', 'day-header');
+    header.appendChild(el('span', 'day-name', dayName));
+    header.appendChild(el('span', 'day-date', fmtDate(d)));
+    header.appendChild(el('span', 'today-badge', 'Today'));
     card.appendChild(header);
 
-    const itemsEl = document.createElement('div');
-    itemsEl.className = 'day-items';
-
-    const rows = [];
-    if (items.length === 0) {
-      itemsEl.innerHTML = '<div class="no-menu">No menu available</div>';
+    const body = el('div', 'day-body');
+    if (sections.length === 0) {
+      body.appendChild(el('div', 'no-menu', 'No menu today'));
     } else {
-      items.forEach((item, idx) => {
-        const row = document.createElement('div');
-        row.className = 'menu-item';
-        row.style.animationDelay = (0.08 * idx) + 's';
-        const bullet = emojiForItem(item, idx);
-        row.innerHTML = `<div class="item-dot" aria-hidden="true">${bullet}</div><div class="item-text">${item}</div>`;
-        itemsEl.appendChild(row);
-        rows.push(row);
+      // First station is the main block; any later ones ("Fan Favorite")
+      // become the callout at the bottom of the card.
+      const main = el('div', 'station');
+      main.appendChild(renderStation(sections[0]));
+      body.appendChild(main);
+      sections.slice(1).forEach(section => {
+        const callout = el('div', 'callout');
+        callout.appendChild(renderStation(section));
+        body.appendChild(callout);
       });
     }
-
-    card.appendChild(itemsEl);
+    card.appendChild(body);
     grid.appendChild(card);
-
-    if (rows.length > 0) fitDayItems(itemsEl, rows);
   });
 
-  buildTicker(allItems);
+  fitCards(grid);
 }
 
-// ── Item auto-fit ────────────────────────────────────────────────────────
-// Each day card can hold anywhere from ~3 items (breakfast) to 6 (the most
-// a lunch day ever has), and item text length varies too, so no single
-// font size is ever right for every card — too big and a full 6-item lunch
-// day clips at the bottom, too small and a 3-item breakfast day looks
-// sparse. Instead, every card starts at the largest size and is shrunk in
-// 1px steps, checked against its own actual rendered height, until its
-// items fit — so a 3-item day stays big and a 6-item day shrinks just
-// enough, automatically, no matter what the actual menu text turns out to
-// be.
-//
-// ITEM_FS_MIN is not a guess: at this card width, even the worst case the
-// data can ever produce — 6 items that all wrap to 3 lines — fits above
-// 27px (6 × 3 lines × 1.25 line-height + 5 gaps, against the ~697px a card
-// has to work with). 26px leaves a small margin below that. Items almost
-// never actually need to shrink this far — this is the guaranteed floor,
-// not the typical size — so reconcileOverflow()'s "+N more" badge below
-// stays purely as a safety net for data this page has never seen, not
-// something that should trigger in normal use.
-const ITEM_FS_MAX = 56;
-const ITEM_FS_MIN = 26;
+// ── Auto-fit ─────────────────────────────────────────────────────────────
+// One scale (--s) for the whole week, so all five cards share the same
+// type sizes. Starts a bit above 1 (a 3-item breakfast week gets bigger
+// type) and steps down until the fullest card fits. SCALE_MIN is a floor,
+// not a typical value — real lunch weeks settle near 1.
 
-function applyItemFontSize(itemsEl, fs) {
-  // Ratios (not flat px) so the reduction is barely noticeable at the
-  // small end but trims the gap/bullet down a bit more at the large end,
-  // where 0.6/0.7 previously looked slightly oversized relative to the text.
-  itemsEl.style.setProperty('--item-fs', fs + 'px');
-  itemsEl.style.setProperty('--item-gap', Math.round(fs * 0.55) + 'px');
-  itemsEl.style.setProperty('--item-dot-fs', Math.round(fs * 0.62) + 'px');
-}
+const SCALE_MAX = 1.2;
+const SCALE_MIN = 0.6;
 
-function fitDayItems(itemsEl, rows) {
-  let fs = ITEM_FS_MAX;
-  applyItemFontSize(itemsEl, fs);
-  while (fs > ITEM_FS_MIN && itemsEl.scrollHeight > itemsEl.clientHeight) {
-    fs -= 1;
-    applyItemFontSize(itemsEl, fs);
+function fitCards(grid) {
+  const bodies = [...grid.querySelectorAll('.day-body')];
+  // Width too: one long word ("Cheeseburger") can be wider than a column
+  // and would clip sideways without ever making the card taller.
+  const overflowing = () => bodies.some(b =>
+    b.scrollHeight > b.clientHeight + 1 || b.scrollWidth > b.clientWidth + 1);
+  let scale = SCALE_MAX;
+  grid.style.setProperty('--s', scale);
+  while (scale > SCALE_MIN && overflowing()) {
+    scale = Math.round((scale - 0.02) * 100) / 100;
+    grid.style.setProperty('--s', scale);
   }
-  // Even at the smallest allowed size, an unusually long list still
-  // doesn't fit — replace the overflowing tail with a "+N more" badge
-  // instead of letting it clip silently against the card's overflow:hidden.
-  if (itemsEl.scrollHeight > itemsEl.clientHeight) {
-    reconcileOverflow(itemsEl, rows);
-  }
-}
-
-function reconcileOverflow(itemsEl, rows) {
-  const limit = itemsEl.clientHeight;
-  let visibleCount = rows.length;
-  for (let i = 0; i < rows.length; i++) {
-    if (rows[i].offsetTop + rows[i].offsetHeight > limit) {
-      visibleCount = i;
-      break;
-    }
-  }
-  visibleCount = Math.max(visibleCount, 1); // always show at least one item
-  const hidden = rows.length - visibleCount;
-  if (hidden <= 0) return;
-  for (let i = visibleCount; i < rows.length; i++) rows[i].style.display = 'none';
-  const badge = document.createElement('div');
-  badge.className = 'more-badge';
-  badge.textContent = `+ ${hidden} more`;
-  itemsEl.appendChild(badge);
 }
 
 // ── School display names ──────────────────────────────────────────────────
@@ -955,7 +829,6 @@ function showIntro(type, schoolDisplay) {
 // ── Boot ──────────────────────────────────────────────────────────────────
 
 async function boot() {
-  spawnFloaters();
   startClock();
 
   const { school, type } = getParams();
@@ -963,6 +836,8 @@ async function boot() {
 
   const today    = new Date();
   const monday   = getMonday(today);
+  // Saturday/Sunday: last week is over, so show the week coming up.
+  if (today.getDay() === 0 || today.getDay() === 6) monday.setDate(monday.getDate() + 7);
 
   let itemMap = {};
   try {

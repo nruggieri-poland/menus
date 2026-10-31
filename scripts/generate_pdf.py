@@ -23,6 +23,7 @@ from reportlab.lib import colors
 from reportlab.lib.units import inch
 from reportlab.pdfgen import canvas
 from reportlab.lib.utils import ImageReader
+from reportlab.pdfbase.pdfmetrics import stringWidth
 
 from menu_content import get_content, DIRECTOR, USDA_NOTICE
 
@@ -107,11 +108,14 @@ def load_rollup(school: str, menutype: str) -> dict | None:
 def build_week_grid(data: dict, year: int, month: int) -> list[list]:
     """
     Returns a list of weeks; each week is a list of 5 slots (Mon–Fri).
-    Each slot is either None or a list of item strings.
+    Each slot is (day_num | None, sections), where sections is a list of
+    {"title": str | None, "items": [str, ...]} — Nutrislice's station
+    groups like "Homestyle" / "Fan Favorite". Older rollup days saved
+    before sections were captured fall back to one untitled section.
     """
-    items_by_date: dict[str, list[str]] = {}
+    items_by_date: dict[str, list[dict]] = {}
     for day in data.get("days", []):
-        items_by_date[day["date"]] = day["items"]
+        items_by_date[day["date"]] = day.get("sections") or [{"title": None, "items": day["items"]}]
 
     first = date(year, month, 1)
     last  = date(year, month, calendar.monthrange(year, month)[1])
@@ -395,6 +399,48 @@ def draw_sidebar(c: canvas.Canvas, school: str, menutype: str):
 # Grid (Mon–Fri calendar)
 # ---------------------------------------------------------------------------
 
+def _wrap_to_width(text: str, font: str, size: float, width: float) -> list[str]:
+    lines, current = [], ""
+    for w in text.split():
+        trial = f"{current} {w}" if current else w
+        if current and stringWidth(trial, font, size) > width:
+            lines.append(current)
+            current = w
+        else:
+            current = trial
+    if current:
+        lines.append(current)
+    return lines
+
+
+def _fit_cell(sections: list[dict], width: float, avail_h: float, size: float = 8.0):
+    """Lay out a day cell's station labels ("HOMESTYLE", "FAN FAVORITE")
+    and items, shrinking the font from 8pt until everything fits — a full
+    lunch day (5 Homestyle items + Fan Favorite) doesn't fit at 8pt, and
+    clipping would always drop the Fan Favorite since it's listed last.
+    Returns (lines, font_size, line_h, label_size, label_h) where lines are
+    ("label" | "item" | "gap", text) tuples."""
+    while True:
+        line_h = size + 2.2
+        label_size = size * 0.8
+        label_h = label_size + 3
+        lines, used = [], 0.0
+        for idx, section in enumerate(sections):
+            if section["title"]:
+                if idx > 0:
+                    lines.append(("gap", ""))
+                    used += 1.5
+                lines.append(("label", section["title"].upper()))
+                used += label_h
+            for item in section["items"]:
+                for line in _wrap_to_width(item, "Helvetica", size, width):
+                    lines.append(("item", line))
+                    used += line_h
+        if used <= avail_h or size <= 5.5:
+            return lines, size, line_h, label_size, label_h
+        size -= 0.25
+
+
 def draw_grid(c: canvas.Canvas, data: dict, year: int, month: int):
     weeks = build_week_grid(data, year, month)
     num_rows = len(weeks)
@@ -413,11 +459,18 @@ def draw_grid(c: canvas.Canvas, data: dict, year: int, month: int):
         cx = GRID_X + col * COL_W + COL_W / 2
         c.drawCentredString(cx, GRID_TOP - subhead_h + 0.07 * inch, day_name)
 
+    # One font size for the whole page — the largest every cell fits at —
+    # so a busy day doesn't sit next to a lighter one in visibly bigger type.
+    avail_h = (row_h - 20 + 8) - 3
+    page_size = min((_fit_cell(sections, COL_W - 10, avail_h)[1]
+                     for week in weeks for day_num, sections in week if sections),
+                    default=8.0)
+
     for row_idx, week in enumerate(weeks):
         row_top = grid_top - row_idx * row_h
         row_bot = row_top - row_h
 
-        for col_idx, (day_num, items) in enumerate(week):
+        for col_idx, (day_num, sections) in enumerate(week):
             cell_x = GRID_X + col_idx * COL_W
             if day_num is None:
                 c.setFillColor(colors.HexColor("#f2f4f8"))
@@ -428,26 +481,22 @@ def draw_grid(c: canvas.Canvas, data: dict, year: int, month: int):
             c.setFont("Helvetica-Bold", 8.5)
             c.drawString(cell_x + 5, row_top - 11, str(day_num))
 
-            if items:
-                font_size = 8
-                c.setFont("Helvetica", font_size)
-                line_h = font_size + 2.2
-                avail_h = row_h - 16
-                max_lines = max(1, int(avail_h / line_h))
-                max_chars = max(8, int(COL_W / (font_size * 0.55)))
+            if sections:
+                lines, font_size, line_h, label_size, label_h = _fit_cell(sections, COL_W - 10, avail_h, page_size)
                 text_y = row_top - 20
-                lines_drawn = 0
-                for item in items:
-                    wrapped = wrap_text_lines(item, max_chars)
-                    for line in wrapped:
-                        if lines_drawn >= max_lines:
-                            break
+                for kind, text in lines:
+                    if kind == "gap":
+                        text_y -= 1.5
+                    elif kind == "label":
+                        c.setFillColor(SCHOOL_BLUE)
+                        c.setFont("Helvetica-Bold", label_size)
+                        c.drawString(cell_x + 5, text_y, text)
+                        text_y -= label_h
+                    else:
                         c.setFillColor(INK)
-                        c.drawString(cell_x + 5, text_y, line)
+                        c.setFont("Helvetica", font_size)
+                        c.drawString(cell_x + 5, text_y, text)
                         text_y -= line_h
-                        lines_drawn += 1
-                    if lines_drawn >= max_lines:
-                        break
 
     # Grid lines
     c.setStrokeColor(BORDER)

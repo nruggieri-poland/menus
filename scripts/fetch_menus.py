@@ -72,6 +72,33 @@ def sundays_covering(start: datetime, end: datetime) -> list[datetime]:
 
 # ── Fetching ─────────────────────────────────────────────────────────────
 
+def parse_sections(entries: list[dict]) -> list[dict]:
+    """Group a day's menu_items under Nutrislice's station headers (e.g.
+    "Homestyle", "Fan Favorite"). Each header row is a text-only entry with
+    is_section_title/is_station_header set; the food rows after it belong
+    to it until the next header. Items before any header get title None.
+    Item names are de-duplicated across the whole day, preserving order."""
+    sections: list[dict] = []
+    seen: set[str] = set()
+    for entry in entries:
+        if entry.get("is_section_title") or entry.get("is_station_header"):
+            title = (entry.get("text") or "").strip()
+            if title:
+                sections.append({"title": title, "items": []})
+            continue
+        food = entry.get("food")
+        if not (food and food.get("name")):
+            continue
+        name = food["name"].strip()
+        if not name or name.lower() == "none" or name in seen:
+            continue
+        seen.add(name)
+        if not sections:
+            sections.append({"title": None, "items": []})
+        sections[-1]["items"].append(name)
+    return [s for s in sections if s["items"]]
+
+
 def fetch_week(api_url: str, sunday: datetime) -> list[dict]:
     """Fetch one week of menu data starting on sunday. Returns list of day dicts."""
     url = f"{api_url}/{sunday.strftime('%Y/%m/%d')}/"
@@ -85,39 +112,26 @@ def fetch_week(api_url: str, sunday: datetime) -> list[dict]:
     days = []
     for day in resp.json().get("days", []):
         date_str = day.get("date", "")
-        items = []
-        for entry in day.get("menu_items", []):
-            food = entry.get("food")
-            if food and food.get("name"):
-                name = food["name"].strip()
-                if name and name.lower() not in ("", "none"):
-                    items.append(name)
+        sections = parse_sections(day.get("menu_items", []))
+        items = [item for section in sections for item in section["items"]]
 
-        # De-duplicate while preserving order
-        seen: set[str] = set()
-        unique_items = []
-        for item in items:
-            if item not in seen:
-                seen.add(item)
-                unique_items.append(item)
-
-        if unique_items:
-            days.append({"date": date_str, "items": unique_items})
+        if items:
+            days.append({"date": date_str, "items": items, "sections": sections})
         else:
             print(f"    – No items for {date_str}")
 
     return days
 
 
-def fetch_range(api_url: str, start: datetime, end: datetime) -> dict[str, list[str]]:
+def fetch_range(api_url: str, start: datetime, end: datetime) -> dict[str, dict]:
     """Fetch every week touching [start, end], each Sunday hit exactly once."""
     sundays = sundays_covering(start, end)
     print(f"    {len(sundays)} weeks to fetch ({start.date()} → {end.date()})")
 
-    fetched: dict[str, list[str]] = {}
+    fetched: dict[str, dict] = {}
     for sunday in sundays:
         for day in fetch_week(api_url, sunday):
-            fetched[day["date"]] = day["items"]
+            fetched[day["date"]] = day
         time.sleep(0.8)  # be polite to Nutrislice
 
     return fetched
@@ -129,21 +143,21 @@ def rollup_path(school: str, menutype: str) -> Path:
     return DATA_DIR / f"{menutype}-{school}.json"
 
 
-def load_rollup_days(school: str, menutype: str) -> dict[str, list[str]]:
+def load_rollup_days(school: str, menutype: str) -> dict[str, dict]:
     path = rollup_path(school, menutype)
     if not path.exists():
         return {}
     data = json.loads(path.read_text())
-    return {d["date"]: d["items"] for d in data.get("days", [])}
+    return {d["date"]: d for d in data.get("days", [])}
 
 
-def save_rollup(school: str, display_name: str, menutype: str, days: dict[str, list[str]]) -> Path:
+def save_rollup(school: str, display_name: str, menutype: str, days: dict[str, dict]) -> Path:
     payload = {
         "school":       school,
         "display_name": display_name,
         "menutype":     menutype,
         "generated_at": datetime.utcnow().isoformat() + "Z",
-        "days":         [{"date": d, "items": days[d]} for d in sorted(days)],
+        "days":         [days[d] for d in sorted(days)],
     }
     path = rollup_path(school, menutype)
     with open(path, "w") as f:

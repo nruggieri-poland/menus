@@ -66,13 +66,26 @@ def fmt_date_long(d: date) -> str:
     return d.strftime("%A, %B ") + str(d.day)
 
 
-def item_map(school: str, menutype: str) -> dict[str, list[str]]:
-    """The whole rollup's days as a single date -> items lookup — the rollup
-    holds full history, so no per-month filtering is needed to use it."""
+def item_map(school: str, menutype: str) -> dict[str, list[dict]]:
+    """The whole rollup's days as a single date -> sections lookup — the
+    rollup holds full history, so no per-month filtering is needed to use
+    it. Each section is {"title": "Homestyle" | "Fan Favorite" | None,
+    "items": [...]}; days saved before sections were captured fall back to
+    one untitled section."""
     data = load_rollup(school, menutype)
     if not data:
         return {}
-    return {day["date"]: day["items"] for day in data.get("days", [])}
+    return {day["date"]: day.get("sections") or [{"title": None, "items": day["items"]}]
+            for day in data.get("days", [])}
+
+
+def sections_html(sections: list[dict]) -> str:
+    out = []
+    for section in sections:
+        if section["title"]:
+            out.append(f'<p class="cal-section">{esc(section["title"])}</p>')
+        out.append("<ul>" + "".join(f"<li>{esc(it)}</li>" for it in section["items"]) + "</ul>")
+    return "".join(out)
 
 
 # ── Shared styling ───────────────────────────────────────────────────────
@@ -118,6 +131,8 @@ BASE_CSS = """
 .menu-embed .cal-daynum{font-weight:700;color:var(--brand-blue);display:block;text-align:right;margin-bottom:.3rem;font-size:.85rem;}
 .menu-embed table.cal ul{list-style:none;margin:0;padding:0;font-size:.8rem;}
 .menu-embed table.cal ul li{margin-bottom:.25rem;color:#333;}
+.menu-embed .cal-section{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--brand-blue);margin:.4rem 0 .2rem;}
+.menu-embed .cal-section:first-of-type{margin-top:0;}
 
 @media (max-width: 700px){
   .menu-embed table.cal thead{position:absolute;left:-9999px;top:-9999px;}
@@ -216,7 +231,7 @@ def build_feed_pages():
 
 # ── Static no-JS fallback fragment (current month only) ───────────────────
 
-def build_week_grid(day_items: dict[str, list[str]], year: int, month: int) -> list[list[tuple[int | None, list[str]]]]:
+def build_week_grid(day_items: dict[str, list[dict]], year: int, month: int) -> list[list[tuple[int | None, list[dict]]]]:
     first = date(year, month, 1)
     last_day = (date(year, month + 1, 1) - timedelta(days=1)) if month < 12 else date(year, 12, 31)
     week_start = first - timedelta(days=first.weekday())
@@ -248,11 +263,11 @@ def render_calendar_fragment(school: str, display_name: str, menutype: str, year
     rows = []
     for week in weeks:
         cells = []
-        for day_name, (day_num, items) in zip(DAYS, week):
+        for day_name, (day_num, sections) in zip(DAYS, week):
             if day_num is None:
                 cells.append(f'<td class="empty" data-day="{esc(day_name)}"></td>')
                 continue
-            items_html = "<ul>" + "".join(f"<li>{esc(it)}</li>" for it in items) + "</ul>" if items else ""
+            items_html = sections_html(sections)
             d_full = date(year, month, day_num)
             cells.append(
                 f'<td data-day="{esc(day_name)}">'

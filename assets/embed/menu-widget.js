@@ -96,12 +96,24 @@
     rollupCache[key] = fetch(REPO_DATA_BASE + filename)
       .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
       .then(function (data) {
+        // date -> [{title, items}] — Nutrislice's station groups
+        // ("Homestyle", "Fan Favorite"). Days saved before sections were
+        // captured fall back to one untitled group.
         var itemMap = {};
-        (data.days || []).forEach(function (d) { itemMap[d.date] = d.items; });
+        (data.days || []).forEach(function (d) {
+          itemMap[d.date] = (d.sections && d.sections.length) ? d.sections : [{ title: null, items: d.items || [] }];
+        });
         return itemMap;
       })
       .catch(function () { return null; });
     return rollupCache[key];
+  }
+
+  function sectionsHtml(sections, listClass) {
+    return sections.map(function (s) {
+      return (s.title ? '<p class="psmenu-section">' + esc(s.title) + '</p>' : '')
+        + '<ul class="' + listClass + '">' + s.items.map(function (it) { return '<li>' + esc(it) + '</li>'; }).join('') + '</ul>';
+    }).join('');
   }
 
   // ── Stylesheet (injected once, scoped under .psmenu) ─────────────────────
@@ -131,6 +143,9 @@
     + '.psmenu ul.psmenu-items{list-style:none;margin:0;padding:0;}'
     + '.psmenu ul.psmenu-items li{padding-left:1.1rem;position:relative;margin-bottom:.4rem;color:#333;}'
     + '.psmenu ul.psmenu-items li:first-child::before{content:"";position:absolute;left:0;top:.55em;width:8px;height:8px;border-radius:50%;background:#1a3e9c;}'
+    + '.psmenu .psmenu-section{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#1a3e9c;margin:.9rem 0 .35rem;}'
+    + '.psmenu .psmenu-section:first-child,.psmenu .psmenu-daydetail-head+.psmenu-section,.psmenu .psmenu-daynum+.psmenu-section{margin-top:0;}'
+    + '.psmenu table.psmenu-cal .psmenu-section{font-size:.62rem;margin:.45rem 0 .2rem;}'
     + '.psmenu .psmenu-toggle{display:flex;justify-content:center;margin-top:1.25rem;}'
     + '.psmenu .psmenu-toggle button{background:#1a3e9c;color:#fff;border:0;padding:.65rem 1.5rem;border-radius:8px;font-weight:600;cursor:pointer;min-height:44px;}'
     + '.psmenu .psmenu-toggle button:hover{background:#0d2870;}'
@@ -277,10 +292,7 @@
         var dayName = DAYS[i];
         if (!d) return '<td class="psmenu-empty" data-day="' + esc(dayName) + '"></td>';
         var key = dateKey(d);
-        var items = itemMap[key] || [];
-        var itemsHtml = items.length
-          ? '<ul class="psmenu-cal-items">' + items.map(function (it) { return '<li>' + esc(it) + '</li>'; }).join('') + '</ul>'
-          : '';
+        var itemsHtml = sectionsHtml(itemMap[key] || [], 'psmenu-cal-items');
         return '<td data-day="' + esc(dayName) + '">'
           + '<span class="psmenu-sr-only">' + esc(fmtDateLong(d)) + ': </span>'
           + '<span class="psmenu-daynum" aria-hidden="true">' + d.getDate() + '</span>'
@@ -361,10 +373,10 @@
 
   Widget.prototype.buildDayDetailHTML = function (itemMap, d) {
     if (!d) return '<p class="psmenu-status">Pick a day above to see its menu.</p>';
-    var items = itemMap[dateKey(d)] || [];
+    var sections = itemMap[dateKey(d)] || [];
     var isToday = sameDay(d, new Date());
-    var itemsHtml = items.length
-      ? '<ul class="psmenu-items">' + items.map(function (it) { return '<li>' + esc(it) + '</li>'; }).join('') + '</ul>'
+    var itemsHtml = sections.length
+      ? sectionsHtml(sections, 'psmenu-items')
       : '<p class="psmenu-no-menu">No menu available</p>';
     return '<div class="psmenu-daydetail-head"><h3>' + esc(fmtDateLong(d))
       + (isToday ? ' <span class="psmenu-flag">Today</span>' : '') + '</h3></div>'
@@ -430,12 +442,9 @@
     var rows = DAYS.map(function (dayName, i) {
       var d = addDays(monday, i);
       var key = dateKey(d);
-      var items = itemMap[key] || [];
       var isToday = sameDay(d, today);
       var flag = isToday ? '<span class="psmenu-flag">Today</span>' : '';
-      var itemsHtml = items.length
-        ? '<ul class="psmenu-items">' + items.map(function (it) { return '<li>' + esc(it) + '</li>'; }).join('') + '</ul>'
-        : '';
+      var itemsHtml = sectionsHtml(itemMap[key] || [], 'psmenu-items');
       return '<div class="psmenu-day' + (isToday ? ' today' : '') + '">'
         + '<div class="psmenu-day-head"><h3>' + esc(dayName) + flag + '</h3>'
         + '<span class="psmenu-date">' + esc(fmtDateFull(d)) + '</span></div>'
