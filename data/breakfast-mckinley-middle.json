@@ -2,7 +2,7 @@
   "school": "mckinley-middle",
   "display_name": "McKinley/Middle School",
   "menutype": "breakfast",
-  "generated_at": "2026-11-01T17:00:52.443666Z",
+  "generated_at": "2026-11-02T14:40:14.784496Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -742,16 +742,16 @@
       "date": "2026-11-02",
       "items": [
         "Mini Maple Waffles",
-        "Apple Juice",
-        "Fresh Petite Banana"
+        "Fresh Petite Banana",
+        "Apple Juice"
       ],
       "sections": [
         {
           "title": "Fan Favorite",
           "items": [
             "Mini Maple Waffles",
-            "Apple Juice",
-            "Fresh Petite Banana"
+            "Fresh Petite Banana",
+            "Apple Juice"
           ]
         }
       ]
@@ -760,16 +760,16 @@
       "date": "2026-11-03",
       "items": [
         "Blueberry Snack'n Waffle",
-        "Sunrise Orange Juice",
-        "Fresh Petite Banana"
+        "Fresh Petite Banana",
+        "Sunrise Orange Juice"
       ],
       "sections": [
         {
           "title": "Fan Favorite",
           "items": [
             "Blueberry Snack'n Waffle",
-            "Sunrise Orange Juice",
-            "Fresh Petite Banana"
+            "Fresh Petite Banana",
+            "Sunrise Orange Juice"
           ]
         }
       ]
@@ -850,16 +850,16 @@
       "date": "2026-11-10",
       "items": [
         "Goody Ring",
-        "Apple Juice",
-        "Raspberry Lemonade Craisins"
+        "Raspberry Lemonade Craisins",
+        "Apple Juice"
       ],
       "sections": [
         {
           "title": "Fan Favorite",
           "items": [
             "Goody Ring",
-            "Apple Juice",
-            "Raspberry Lemonade Craisins"
+            "Raspberry Lemonade Craisins",
+            "Apple Juice"
           ]
         }
       ]
@@ -904,16 +904,16 @@
       "date": "2026-11-13",
       "items": [
         "Chocolate Banana Breakfast Smoothie with Toast",
-        "Sunrise Orange Juice",
-        "Golden Delicious Apple"
+        "Golden Delicious Apple",
+        "Sunrise Orange Juice"
       ],
       "sections": [
         {
           "title": "Fan Favorite",
           "items": [
             "Chocolate Banana Breakfast Smoothie with Toast",
-            "Sunrise Orange Juice",
-            "Golden Delicious Apple"
+            "Golden Delicious Apple",
+            "Sunrise Orange Juice"
           ]
         }
       ]

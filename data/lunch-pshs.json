@@ -2,7 +2,7 @@
   "school": "pshs",
   "display_name": "Poland Seminary High School",
   "menutype": "lunch",
-  "generated_at": "2026-11-01T17:00:40.245284Z",
+  "generated_at": "2026-11-02T14:39:58.871867Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -1183,8 +1183,8 @@
       "date": "2026-11-02",
       "items": [
         "Chicken Parmesan Sandwich",
-        "Cucumbers",
         "Oven Roasted Carrots",
+        "Cucumbers",
         "Fresh Petite Banana",
         "Cinnamon Applesauce",
         "Popcorn Smackers"
@@ -1194,8 +1194,8 @@
           "title": "Homestyle",
           "items": [
             "Chicken Parmesan Sandwich",
-            "Cucumbers",
             "Oven Roasted Carrots",
+            "Cucumbers",
             "Fresh Petite Banana",
             "Cinnamon Applesauce"
           ]
@@ -1214,8 +1214,8 @@
         "Chicken Fajita & Cheese Dip w/Fresh Bread",
         "Fresh Celery Sticks",
         "Seasoned Refried Beans",
-        "Golden Delicious Apple",
         "Citrusy Mandarin Oranges",
+        "Golden Delicious Apple",
         "Corn Dog Nuggets"
       ],
       "sections": [
@@ -1225,8 +1225,8 @@
             "Chicken Fajita & Cheese Dip w/Fresh Bread",
             "Fresh Celery Sticks",
             "Seasoned Refried Beans",
-            "Golden Delicious Apple",
-            "Citrusy Mandarin Oranges"
+            "Citrusy Mandarin Oranges",
+            "Golden Delicious Apple"
           ]
         },
         {
@@ -1241,8 +1241,8 @@
       "date": "2026-11-04",
       "items": [
         "Chicken Meatballs & Penne Pasta w/Fresh Bread",
-        "Seasoned Steamed Green Beans",
         "Fresh Baby Carrots",
+        "Seasoned Steamed Green Beans",
         "Golden Delicious Apple",
         "Applesauce",
         "Chicken Nuggets"
@@ -1252,8 +1252,8 @@
           "title": "Homestyle",
           "items": [
             "Chicken Meatballs & Penne Pasta w/Fresh Bread",
-            "Seasoned Steamed Green Beans",
             "Fresh Baby Carrots",
+            "Seasoned Steamed Green Beans",
             "Golden Delicious Apple",
             "Applesauce"
           ]
@@ -1330,8 +1330,8 @@
         "French Toast Sticks w/ 2 Sausage Patties",
         "Crispy Tater Tots",
         "Fresh Baby Carrots",
-        "Cinnamon Applesauce",
         "Red Delicious Apple",
+        "Cinnamon Applesauce",
         "Corn Dog Nuggets"
       ],
       "sections": [
@@ -1341,8 +1341,8 @@
             "French Toast Sticks w/ 2 Sausage Patties",
             "Crispy Tater Tots",
             "Fresh Baby Carrots",
-            "Cinnamon Applesauce",
-            "Red Delicious Apple"
+            "Red Delicious Apple",
+            "Cinnamon Applesauce"
           ]
         },
         {
@@ -1386,10 +1386,10 @@
       "date": "2026-11-11",
       "items": [
         "Bacon Cheeseburger",
-        "BBQ Bacon Baked Beans",
         "Fresh Baby Carrots",
-        "Strawberry Applesauce",
+        "BBQ Bacon Baked Beans",
         "Fresh Petite Banana",
+        "Strawberry Applesauce",
         "Crispy Spicy Chicken Patty Sandwich"
       ],
       "sections": [
@@ -1397,10 +1397,10 @@
           "title": "Homestyle",
           "items": [
             "Bacon Cheeseburger",
-            "BBQ Bacon Baked Beans",
             "Fresh Baby Carrots",
-            "Strawberry Applesauce",
-            "Fresh Petite Banana"
+            "BBQ Bacon Baked Beans",
+            "Fresh Petite Banana",
+            "Strawberry Applesauce"
           ]
         },
         {
@@ -1415,8 +1415,8 @@
       "date": "2026-11-12",
       "items": [
         "Crispy Chicken Tender Combo with Crave Sauce and Garlic Toast",
-        "Cucumbers",
         "Oven Roasted Carrots",
+        "Cucumbers",
         "Red Delicious Apple",
         "Tropical Pineapple Tidbits",
         "Cheeseburger on a Bun"
@@ -1426,8 +1426,8 @@
           "title": "Homestyle",
           "items": [
             "Crispy Chicken Tender Combo with Crave Sauce and Garlic Toast",
-            "Cucumbers",
             "Oven Roasted Carrots",
+            "Cucumbers",
             "Red Delicious Apple",
             "Tropical Pineapple Tidbits"
           ]

@@ -2,7 +2,7 @@
   "school": "mckinley-middle",
   "display_name": "McKinley/Middle School",
   "menutype": "lunch",
-  "generated_at": "2026-11-01T17:01:04.801309Z",
+  "generated_at": "2026-11-02T14:40:31.439559Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -1182,8 +1182,8 @@
       "date": "2026-11-05",
       "items": [
         "Bacon Cheeseburger",
-        "Baked French Fries",
         "Fresh Baby Carrots",
+        "Baked French Fries",
         "Blue Raspberry Applesauce",
         "Breaded Chicken Sandwich"
       ],
@@ -1192,8 +1192,8 @@
           "title": "Homestyle",
           "items": [
             "Bacon Cheeseburger",
-            "Baked French Fries",
             "Fresh Baby Carrots",
+            "Baked French Fries",
             "Blue Raspberry Applesauce"
           ]
         },
@@ -1263,8 +1263,8 @@
       "date": "2026-11-10",
       "items": [
         "Popcorn Smackers",
-        "Creamy Mashed Potatoes w/ Gravy",
         "Fresh Baby Carrots",
+        "Creamy Mashed Potatoes w/ Gravy",
         "Strawberry Banana Applesauce",
         "Corn Dog Nuggets"
       ],
@@ -1273,8 +1273,8 @@
           "title": "Homestyle",
           "items": [
             "Popcorn Smackers",
-            "Creamy Mashed Potatoes w/ Gravy",
             "Fresh Baby Carrots",
+            "Creamy Mashed Potatoes w/ Gravy",
             "Strawberry Banana Applesauce"
           ]
         },
@@ -1317,8 +1317,8 @@
       "date": "2026-11-12",
       "items": [
         "Chicken Meatballs & Penne Pasta w/Fresh Bread",
-        "Seasoned Steamed Green Beans",
         "Fresh Baby Carrots",
+        "Seasoned Steamed Green Beans",
         "Tropical Pineapple Tidbits",
         "Breaded Chicken Sandwich"
       ],
@@ -1327,8 +1327,8 @@
           "title": "Homestyle",
           "items": [
             "Chicken Meatballs & Penne Pasta w/Fresh Bread",
-            "Seasoned Steamed Green Beans",
             "Fresh Baby Carrots",
+            "Seasoned Steamed Green Beans",
             "Tropical Pineapple Tidbits"
           ]
         },
