@@ -2,7 +2,7 @@
   "school": "mckinley-middle",
   "display_name": "McKinley/Middle School",
   "menutype": "lunch",
-  "generated_at": "2026-11-02T20:38:57.187915Z",
+  "generated_at": "2026-11-05T18:33:03.882659Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -1425,8 +1425,8 @@
       "date": "2026-11-18",
       "items": [
         "French Toast Sticks w/Sausage",
-        "Fresh Baby Carrots",
         "Crispy Tater Tots",
+        "Fresh Baby Carrots",
         "Raspberry Lemonade Craisins",
         "Breaded Chicken Sandwich"
       ],
@@ -1435,8 +1435,8 @@
           "title": "Homestyle",
           "items": [
             "French Toast Sticks w/Sausage",
-            "Fresh Baby Carrots",
             "Crispy Tater Tots",
+            "Fresh Baby Carrots",
             "Raspberry Lemonade Craisins"
           ]
         },

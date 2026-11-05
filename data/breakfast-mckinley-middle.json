@@ -2,7 +2,7 @@
   "school": "mckinley-middle",
   "display_name": "McKinley/Middle School",
   "menutype": "breakfast",
-  "generated_at": "2026-11-02T20:38:40.527885Z",
+  "generated_at": "2026-11-05T18:32:49.277334Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -958,16 +958,16 @@
       "date": "2026-11-18",
       "items": [
         "Cinnamon Roll",
-        "Apple Juice",
-        "Fresh Petite Banana"
+        "Fresh Petite Banana",
+        "Apple Juice"
       ],
       "sections": [
         {
           "title": "Fan Favorite",
           "items": [
             "Cinnamon Roll",
-            "Apple Juice",
-            "Fresh Petite Banana"
+            "Fresh Petite Banana",
+            "Apple Juice"
           ]
         }
       ]

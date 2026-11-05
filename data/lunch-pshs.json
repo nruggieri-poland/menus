@@ -2,7 +2,7 @@
   "school": "pshs",
   "display_name": "Poland Seminary High School",
   "menutype": "lunch",
-  "generated_at": "2026-11-02T20:38:24.685003Z",
+  "generated_at": "2026-11-05T18:32:34.979244Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -1473,10 +1473,10 @@
       "date": "2026-11-16",
       "items": [
         "Dutch Waffle & Chicken",
-        "Cucumbers",
         "Seasoned Steamed Broccoli",
-        "Cinnamon Applesauce",
+        "Cucumbers",
         "Red Delicious Apple",
+        "Cinnamon Applesauce",
         "Breaded Chicken Sandwich"
       ],
       "sections": [
@@ -1484,10 +1484,10 @@
           "title": "Homestyle",
           "items": [
             "Dutch Waffle & Chicken",
-            "Cucumbers",
             "Seasoned Steamed Broccoli",
-            "Cinnamon Applesauce",
-            "Red Delicious Apple"
+            "Cucumbers",
+            "Red Delicious Apple",
+            "Cinnamon Applesauce"
           ]
         },
         {
@@ -1502,8 +1502,8 @@
       "date": "2026-11-17",
       "items": [
         "Beef & Cheese Nachos",
-        "Seasoned Refried Beans",
         "Fresh Baby Carrots",
+        "Seasoned Refried Beans",
         "Citrusy Mandarin Oranges",
         "Fresh Petite Banana",
         "Cheeseburger on a Bun"
@@ -1513,8 +1513,8 @@
           "title": "Homestyle",
           "items": [
             "Beef & Cheese Nachos",
-            "Seasoned Refried Beans",
             "Fresh Baby Carrots",
+            "Seasoned Refried Beans",
             "Citrusy Mandarin Oranges",
             "Fresh Petite Banana"
           ]

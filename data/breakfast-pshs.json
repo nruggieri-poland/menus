@@ -2,7 +2,7 @@
   "school": "pshs",
   "display_name": "Poland Seminary High School",
   "menutype": "breakfast",
-  "generated_at": "2026-11-02T20:38:08.119226Z",
+  "generated_at": "2026-11-05T18:32:20.399950Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -922,16 +922,16 @@
       "date": "2026-11-16",
       "items": [
         "Mini Chocolate Chip French Toast",
-        "Apple Juice",
-        "Golden Delicious Apple"
+        "Golden Delicious Apple",
+        "Apple Juice"
       ],
       "sections": [
         {
           "title": "Fan Favorite",
           "items": [
             "Mini Chocolate Chip French Toast",
-            "Apple Juice",
-            "Golden Delicious Apple"
+            "Golden Delicious Apple",
+            "Apple Juice"
           ]
         }
       ]
@@ -940,16 +940,16 @@
       "date": "2026-11-17",
       "items": [
         "Confetti Pancakes",
-        "Sunrise Orange Juice",
-        "Fresh Petite Banana"
+        "Fresh Petite Banana",
+        "Sunrise Orange Juice"
       ],
       "sections": [
         {
           "title": "Fan Favorite",
           "items": [
             "Confetti Pancakes",
-            "Sunrise Orange Juice",
-            "Fresh Petite Banana"
+            "Fresh Petite Banana",
+            "Sunrise Orange Juice"
           ]
         }
       ]
