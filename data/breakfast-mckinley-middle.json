@@ -2,7 +2,7 @@
   "school": "mckinley-middle",
   "display_name": "McKinley/Middle School",
   "menutype": "breakfast",
-  "generated_at": "2026-11-05T18:32:49.277334Z",
+  "generated_at": "2026-11-09T21:18:10.404816Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -976,16 +976,16 @@
       "date": "2026-11-19",
       "items": [
         "Goody Ring",
-        "Apple Juice",
-        "Cinnamon Applesauce"
+        "Cinnamon Applesauce",
+        "Apple Juice"
       ],
       "sections": [
         {
           "title": "Fan Favorite",
           "items": [
             "Goody Ring",
-            "Apple Juice",
-            "Cinnamon Applesauce"
+            "Cinnamon Applesauce",
+            "Apple Juice"
           ]
         }
       ]
@@ -994,16 +994,16 @@
       "date": "2026-11-20",
       "items": [
         "Iced Donut w/Sprinkles",
-        "Sunrise Orange Juice",
-        "Raspberry Lemonade Craisins"
+        "Raspberry Lemonade Craisins",
+        "Sunrise Orange Juice"
       ],
       "sections": [
         {
           "title": "Fan Favorite",
           "items": [
             "Iced Donut w/Sprinkles",
-            "Sunrise Orange Juice",
-            "Raspberry Lemonade Craisins"
+            "Raspberry Lemonade Craisins",
+            "Sunrise Orange Juice"
           ]
         }
       ]

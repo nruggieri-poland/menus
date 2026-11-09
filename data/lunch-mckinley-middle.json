@@ -2,7 +2,7 @@
   "school": "mckinley-middle",
   "display_name": "McKinley/Middle School",
   "menutype": "lunch",
-  "generated_at": "2026-11-05T18:33:03.882659Z",
+  "generated_at": "2026-11-09T21:18:27.341539Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -1452,8 +1452,8 @@
       "date": "2026-11-19",
       "items": [
         "Roasted Turkey & Gravy w/ Fresh Bread",
-        "Creamy Mashed Potatoes",
         "Seasoned Steamed Carrots",
+        "Creamy Mashed Potatoes",
         "Citrusy Mandarin Oranges",
         "Corn Dog Nuggets"
       ],
@@ -1462,8 +1462,8 @@
           "title": "Homestyle",
           "items": [
             "Roasted Turkey & Gravy w/ Fresh Bread",
-            "Creamy Mashed Potatoes",
             "Seasoned Steamed Carrots",
+            "Creamy Mashed Potatoes",
             "Citrusy Mandarin Oranges"
           ]
         },

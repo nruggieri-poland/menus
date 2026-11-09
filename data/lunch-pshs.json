@@ -2,7 +2,7 @@
   "school": "pshs",
   "display_name": "Poland Seminary High School",
   "menutype": "lunch",
-  "generated_at": "2026-11-05T18:32:34.979244Z",
+  "generated_at": "2026-11-09T21:17:54.189111Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -1560,10 +1560,10 @@
       "date": "2026-11-19",
       "items": [
         "Roasted Turkey & Gravy w/ Fresh Bread",
-        "Creamy Mashed Potatoes",
         "Honey Glazed Carrots",
-        "Applesauce",
+        "Creamy Mashed Potatoes",
         "Golden Delicious Apple",
+        "Applesauce",
         "Crispy Spicy Chicken Patty Sandwich"
       ],
       "sections": [
@@ -1571,10 +1571,10 @@
           "title": "Homestyle",
           "items": [
             "Roasted Turkey & Gravy w/ Fresh Bread",
-            "Creamy Mashed Potatoes",
             "Honey Glazed Carrots",
-            "Applesauce",
-            "Golden Delicious Apple"
+            "Creamy Mashed Potatoes",
+            "Golden Delicious Apple",
+            "Applesauce"
           ]
         },
         {

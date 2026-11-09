@@ -2,7 +2,7 @@
   "school": "pshs",
   "display_name": "Poland Seminary High School",
   "menutype": "breakfast",
-  "generated_at": "2026-11-05T18:32:20.399950Z",
+  "generated_at": "2026-11-09T21:17:37.303367Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -994,16 +994,16 @@
       "date": "2026-11-20",
       "items": [
         "Iced Donut w/Sprinkles",
-        "Sunrise Orange Juice",
-        "Raspberry Lemonade Craisins"
+        "Raspberry Lemonade Craisins",
+        "Sunrise Orange Juice"
       ],
       "sections": [
         {
           "title": "Fan Favorite",
           "items": [
             "Iced Donut w/Sprinkles",
-            "Sunrise Orange Juice",
-            "Raspberry Lemonade Craisins"
+            "Raspberry Lemonade Craisins",
+            "Sunrise Orange Juice"
           ]
         }
       ]
