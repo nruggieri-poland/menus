@@ -2,7 +2,7 @@
   "school": "pshs",
   "display_name": "Poland Seminary High School",
   "menutype": "breakfast",
-  "generated_at": "2026-11-09T21:17:37.303367Z",
+  "generated_at": "2026-11-12T18:41:47.517496Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -1030,16 +1030,16 @@
       "date": "2026-11-24",
       "items": [
         "Strawberry Cream Cheese Mini Bagels",
-        "Apple Juice",
-        "Raspberry Lemonade Craisins"
+        "Raspberry Lemonade Craisins",
+        "Apple Juice"
       ],
       "sections": [
         {
           "title": "Fan Favorite",
           "items": [
             "Strawberry Cream Cheese Mini Bagels",
-            "Apple Juice",
-            "Raspberry Lemonade Craisins"
+            "Raspberry Lemonade Craisins",
+            "Apple Juice"
           ]
         }
       ]
@@ -1058,6 +1058,258 @@
             "Mini Maple Waffles",
             "Raspberry Lemonade Craisins",
             "Apple Juice"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-12-01",
+      "items": [
+        "Confetti Pancakes",
+        "Fresh Petite Banana",
+        "Sunrise Orange Juice"
+      ],
+      "sections": [
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Confetti Pancakes",
+            "Fresh Petite Banana",
+            "Sunrise Orange Juice"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-12-02",
+      "items": [
+        "Blueberry Snack'n Waffle",
+        "Fruit Punch Craisins",
+        "Apple Juice"
+      ],
+      "sections": [
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Blueberry Snack'n Waffle",
+            "Fruit Punch Craisins",
+            "Apple Juice"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-12-03",
+      "items": [
+        "Mini Chocolate Chip French Toast",
+        "Sunrise Orange Juice",
+        "Cinnamon Applesauce"
+      ],
+      "sections": [
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Mini Chocolate Chip French Toast",
+            "Sunrise Orange Juice",
+            "Cinnamon Applesauce"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-12-04",
+      "items": [
+        "Iced Donut w/Sprinkles",
+        "Apple Juice",
+        "Golden Delicious Apple"
+      ],
+      "sections": [
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Iced Donut w/Sprinkles",
+            "Apple Juice",
+            "Golden Delicious Apple"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-12-07",
+      "items": [
+        "Cinnamon Roll",
+        "Sunrise Orange Juice",
+        "Golden Delicious Apple"
+      ],
+      "sections": [
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Cinnamon Roll",
+            "Sunrise Orange Juice",
+            "Golden Delicious Apple"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-12-08",
+      "items": [
+        "Mini Cinnamon Waffles",
+        "Cinnamon Applesauce",
+        "Apple Juice"
+      ],
+      "sections": [
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Mini Cinnamon Waffles",
+            "Cinnamon Applesauce",
+            "Apple Juice"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-12-09",
+      "items": [
+        "Strawberry Cream Cheese Mini Bagels",
+        "Sunrise Orange Juice",
+        "Raspberry Lemonade Craisins"
+      ],
+      "sections": [
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Strawberry Cream Cheese Mini Bagels",
+            "Sunrise Orange Juice",
+            "Raspberry Lemonade Craisins"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-12-10",
+      "items": [
+        "Strawberry Pancake Puffs",
+        "Fresh Petite Banana",
+        "Apple Juice"
+      ],
+      "sections": [
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Strawberry Pancake Puffs",
+            "Fresh Petite Banana",
+            "Apple Juice"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-12-11",
+      "items": [
+        "Chocolate Banana Breakfast Smoothie with Toast",
+        "Sunrise Orange Juice",
+        "Fresh Petite Banana"
+      ],
+      "sections": [
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Chocolate Banana Breakfast Smoothie with Toast",
+            "Sunrise Orange Juice",
+            "Fresh Petite Banana"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-12-14",
+      "items": [
+        "Mini Maple Waffles",
+        "Apple Juice",
+        "Fruit Punch Craisins"
+      ],
+      "sections": [
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Mini Maple Waffles",
+            "Apple Juice",
+            "Fruit Punch Craisins"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-12-15",
+      "items": [
+        "Blueberry Snack'n Waffle",
+        "Sunrise Orange Juice",
+        "Fresh Petite Banana"
+      ],
+      "sections": [
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Blueberry Snack'n Waffle",
+            "Sunrise Orange Juice",
+            "Fresh Petite Banana"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-12-16",
+      "items": [
+        "Cinnamon Roll",
+        "Apple Juice",
+        "Golden Delicious Apple"
+      ],
+      "sections": [
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Cinnamon Roll",
+            "Apple Juice",
+            "Golden Delicious Apple"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-12-17",
+      "items": [
+        "Mini Chocolate Chip French Toast",
+        "Cinnamon Applesauce",
+        "Sunrise Orange Juice"
+      ],
+      "sections": [
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Mini Chocolate Chip French Toast",
+            "Cinnamon Applesauce",
+            "Sunrise Orange Juice"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-12-18",
+      "items": [
+        "Iced Donut w/Sprinkles",
+        "Apple Juice",
+        "Fresh Petite Banana"
+      ],
+      "sections": [
+        {
+          "title": "Fan Favorite",
+          "items": [
+            "Iced Donut w/Sprinkles",
+            "Apple Juice",
+            "Fresh Petite Banana"
           ]
         }
       ]
