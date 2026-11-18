@@ -2,7 +2,7 @@
   "school": "pshs",
   "display_name": "Poland Seminary High School",
   "menutype": "lunch",
-  "generated_at": "2026-11-16T20:49:06.390677Z",
+  "generated_at": "2026-11-18T12:32:09.066665Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -1676,8 +1676,8 @@
       "date": "2026-11-30",
       "items": [
         "French Toast Sticks w/ 2 Sausage Patties",
-        "Cucumbers",
         "Crispy Tater Tots",
+        "Cucumbers",
         "Golden Delicious Apple",
         "Applesauce",
         "Pepperoni Pizza"
@@ -1687,8 +1687,8 @@
           "title": "Homestyle",
           "items": [
             "French Toast Sticks w/ 2 Sausage Patties",
-            "Cucumbers",
             "Crispy Tater Tots",
+            "Cucumbers",
             "Golden Delicious Apple",
             "Applesauce"
           ]
@@ -1705,10 +1705,10 @@
       "date": "2026-12-01",
       "items": [
         "Cheese Quesadilla w/ Salsa",
-        "Seasoned Refried Beans",
         "Fresh Baby Carrots",
-        "Fresh Petite Banana",
+        "Seasoned Refried Beans",
         "Red Delicious Apple",
+        "Fresh Petite Banana",
         "Crispy Spicy Chicken Patty Sandwich"
       ],
       "sections": [
@@ -1716,10 +1716,10 @@
           "title": "Homestyle",
           "items": [
             "Cheese Quesadilla w/ Salsa",
-            "Seasoned Refried Beans",
             "Fresh Baby Carrots",
-            "Fresh Petite Banana",
-            "Red Delicious Apple"
+            "Seasoned Refried Beans",
+            "Red Delicious Apple",
+            "Fresh Petite Banana"
           ]
         },
         {
