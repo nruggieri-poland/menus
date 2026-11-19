@@ -2,7 +2,7 @@
   "school": "pshs",
   "display_name": "Poland Seminary High School",
   "menutype": "breakfast",
-  "generated_at": "2026-11-18T12:31:52.446631Z",
+  "generated_at": "2026-11-19T19:21:50.046097Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -1084,16 +1084,16 @@
       "date": "2026-12-02",
       "items": [
         "Blueberry Snack'n Waffle",
-        "Fruit Punch Craisins",
-        "Apple Juice"
+        "Apple Juice",
+        "Fruit Punch Craisins"
       ],
       "sections": [
         {
           "title": "Fan Favorite",
           "items": [
             "Blueberry Snack'n Waffle",
-            "Fruit Punch Craisins",
-            "Apple Juice"
+            "Apple Juice",
+            "Fruit Punch Craisins"
           ]
         }
       ]
