@@ -2,7 +2,7 @@
   "school": "pshs",
   "display_name": "Poland Seminary High School",
   "menutype": "lunch",
-  "generated_at": "2026-11-19T19:22:06.961026Z",
+  "generated_at": "2026-11-23T22:27:25.316940Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -1763,10 +1763,10 @@
       "date": "2026-12-03",
       "items": [
         "Meatball Hoagie",
-        "Black Bean & Corn Salad",
         "Honey Glazed Carrots",
-        "Strawberry Applesauce",
+        "Black Bean & Corn Salad",
         "Fresh Petite Banana",
+        "Strawberry Applesauce",
         "Corn Dog"
       ],
       "sections": [
@@ -1774,10 +1774,10 @@
           "title": "Homestyle",
           "items": [
             "Meatball Hoagie",
-            "Black Bean & Corn Salad",
             "Honey Glazed Carrots",
-            "Strawberry Applesauce",
-            "Fresh Petite Banana"
+            "Black Bean & Corn Salad",
+            "Fresh Petite Banana",
+            "Strawberry Applesauce"
           ]
         },
         {
@@ -1792,10 +1792,10 @@
       "date": "2026-12-04",
       "items": [
         "Buffalo Chicken Pizza",
-        "Seasoned Steamed Green Beans",
         "Fresh Baby Carrots",
-        "Tropical Pineapple Tidbits",
+        "Seasoned Steamed Green Beans",
         "Golden Delicious Apple",
+        "Tropical Pineapple Tidbits",
         "Grilled Cheese"
       ],
       "sections": [
@@ -1803,10 +1803,10 @@
           "title": "Homestyle",
           "items": [
             "Buffalo Chicken Pizza",
-            "Seasoned Steamed Green Beans",
             "Fresh Baby Carrots",
-            "Tropical Pineapple Tidbits",
-            "Golden Delicious Apple"
+            "Seasoned Steamed Green Beans",
+            "Golden Delicious Apple",
+            "Tropical Pineapple Tidbits"
           ]
         },
         {

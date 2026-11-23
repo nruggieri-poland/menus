@@ -2,7 +2,7 @@
   "school": "mckinley-middle",
   "display_name": "McKinley/Middle School",
   "menutype": "lunch",
-  "generated_at": "2026-11-19T19:22:40.024445Z",
+  "generated_at": "2026-11-23T22:27:51.384446Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -1668,8 +1668,8 @@
       "date": "2026-12-04",
       "items": [
         "Cheese Pizza",
-        "Seasoned Steamed Broccoli",
         "Fresh Baby Carrots",
+        "Seasoned Steamed Broccoli",
         "Applesauce",
         "Corn Dog Nuggets"
       ],
@@ -1678,8 +1678,8 @@
           "title": "Homestyle",
           "items": [
             "Cheese Pizza",
-            "Seasoned Steamed Broccoli",
             "Fresh Baby Carrots",
+            "Seasoned Steamed Broccoli",
             "Applesauce"
           ]
         },
