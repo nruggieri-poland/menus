@@ -2,7 +2,7 @@
   "school": "mckinley-middle",
   "display_name": "McKinley/Middle School",
   "menutype": "lunch",
-  "generated_at": "2026-11-23T22:27:51.384446Z",
+  "generated_at": "2026-11-26T20:00:07.438220Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -1695,8 +1695,8 @@
       "date": "2026-12-07",
       "items": [
         "Teriyaki Chicken & Vegetables over Fluffy Rice",
-        "Seasoned Steamed Mixed Vegetables",
         "Fresh Baby Carrots",
+        "Seasoned Steamed Mixed Vegetables",
         "Cinnamon Applesauce",
         "Breaded Chicken Sandwich"
       ],
@@ -1705,8 +1705,8 @@
           "title": "Homestyle",
           "items": [
             "Teriyaki Chicken & Vegetables over Fluffy Rice",
-            "Seasoned Steamed Mixed Vegetables",
             "Fresh Baby Carrots",
+            "Seasoned Steamed Mixed Vegetables",
             "Cinnamon Applesauce"
           ]
         },
@@ -1722,8 +1722,8 @@
       "date": "2026-12-08",
       "items": [
         "Sloppy Nachos",
-        "Seasoned Refried Beans",
         "Fresh Cucumber Slices",
+        "Seasoned Refried Beans",
         "Tropical Pineapple Tidbits",
         "Popcorn Smackers"
       ],
@@ -1732,8 +1732,8 @@
           "title": "Homestyle",
           "items": [
             "Sloppy Nachos",
-            "Seasoned Refried Beans",
             "Fresh Cucumber Slices",
+            "Seasoned Refried Beans",
             "Tropical Pineapple Tidbits"
           ]
         },
@@ -1749,8 +1749,8 @@
       "date": "2026-12-09",
       "items": [
         "Meatball Hoagie",
-        "Seasoned Steamed Green Beans",
         "Fresh Cucumber Slices",
+        "Seasoned Steamed Green Beans",
         "Golden Delicious Apple",
         "Corn Dog Nuggets"
       ],
@@ -1759,8 +1759,8 @@
           "title": "Homestyle",
           "items": [
             "Meatball Hoagie",
-            "Seasoned Steamed Green Beans",
             "Fresh Cucumber Slices",
+            "Seasoned Steamed Green Beans",
             "Golden Delicious Apple"
           ]
         },

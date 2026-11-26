@@ -2,7 +2,7 @@
   "school": "pshs",
   "display_name": "Poland Seminary High School",
   "menutype": "lunch",
-  "generated_at": "2026-11-23T22:27:25.316940Z",
+  "generated_at": "2026-11-26T19:59:38.639805Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -1823,8 +1823,8 @@
         "Buffalo Chicken Dipper w/ Garlic Toast",
         "Fresh Baby Carrots",
         "Seasoned Steamed Mixed Vegetables",
-        "Cinnamon Applesauce",
         "Red Delicious Apple",
+        "Cinnamon Applesauce",
         "Cheeseburger on a Bun"
       ],
       "sections": [
@@ -1834,8 +1834,8 @@
             "Buffalo Chicken Dipper w/ Garlic Toast",
             "Fresh Baby Carrots",
             "Seasoned Steamed Mixed Vegetables",
-            "Cinnamon Applesauce",
-            "Red Delicious Apple"
+            "Red Delicious Apple",
+            "Cinnamon Applesauce"
           ]
         },
         {
@@ -1879,10 +1879,10 @@
       "date": "2026-12-09",
       "items": [
         "Sweet and Sour Chicken w/ Rice",
-        "Seasoned Steamed Golden Corn",
         "Fresh Baby Carrots",
-        "Applesauce",
+        "Seasoned Steamed Golden Corn",
         "Red Delicious Apple",
+        "Applesauce",
         "Crispy Spicy Chicken Patty Sandwich"
       ],
       "sections": [
@@ -1890,10 +1890,10 @@
           "title": "Homestyle",
           "items": [
             "Sweet and Sour Chicken w/ Rice",
-            "Seasoned Steamed Golden Corn",
             "Fresh Baby Carrots",
-            "Applesauce",
-            "Red Delicious Apple"
+            "Seasoned Steamed Golden Corn",
+            "Red Delicious Apple",
+            "Applesauce"
           ]
         },
         {

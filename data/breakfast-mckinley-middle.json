@@ -2,7 +2,7 @@
   "school": "mckinley-middle",
   "display_name": "McKinley/Middle School",
   "menutype": "breakfast",
-  "generated_at": "2026-11-23T22:27:38.260835Z",
+  "generated_at": "2026-11-26T19:59:53.220950Z",
   "days": [
     {
       "date": "2026-08-25",
@@ -1174,16 +1174,16 @@
       "date": "2026-12-09",
       "items": [
         "Strawberry Cream Cheese Mini Bagels",
-        "Apple Juice",
-        "Fresh Petite Banana"
+        "Fresh Petite Banana",
+        "Apple Juice"
       ],
       "sections": [
         {
           "title": "Fan Favorite",
           "items": [
             "Strawberry Cream Cheese Mini Bagels",
-            "Apple Juice",
-            "Fresh Petite Banana"
+            "Fresh Petite Banana",
+            "Apple Juice"
           ]
         }
       ]
